@@ -15,8 +15,16 @@ let selectedVariant = null;
 // ============ ЗАГРУЗКА ДАННЫХ ============
 async function loadData() {
     try {
+        // Пробуем загрузить data.json
+        console.log('Загрузка data.json...');
         const response = await fetch('./data.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
         const data = await response.json();
+        console.log('Данные загружены:', data);
         
         products = data.products;
         categories = data.categories;
@@ -40,13 +48,22 @@ async function loadData() {
         initApp();
         
     } catch (error) {
-        console.error('Ошибка загрузки данных:', error);
-        document.getElementById('mainContent').innerHTML = '<div style="text-align:center;padding:50px;color:red;">Ошибка загрузки данных. Проверьте файл data.json</div>';
+        console.error('Ошибка загрузки:', error);
+        // Показываем понятную ошибку
+        document.getElementById('mainContent').innerHTML = `
+            <div style="text-align:center; padding:50px; color:red;">
+                ❌ Ошибка загрузки данных<br>
+                <small style="color:#888">${error.message}</small><br><br>
+                <button onclick="location.reload()" style="padding:10px 20px; background:#1a1a2e; color:white; border:none; border-radius:10px;">↻ Перезагрузить</button>
+            </div>
+        `;
     }
 }
 
 // ============ ИНИЦИАЛИЗАЦИЯ ============
 function initApp() {
+    console.log('Инициализация приложения, товаров:', products.length);
+    
     // Навигация
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.addEventListener('click', () => switchPage(btn.dataset.page));
@@ -95,11 +112,6 @@ function updateCartBadge() {
     }
 }
 
-function getProductPrice(product, rangeKey) {
-    if (product.sale && product.salePrice) return product.salePrice;
-    return product.priceRanges[rangeKey] || Object.values(product.priceRanges)[0];
-}
-
 function getVariantType(product) {
     if (product.flavors && product.flavors.length) return { type: 'flavors', label: 'Выберите вкус', items: product.flavors };
     if (product.colors && product.colors.length) return { type: 'colors', label: 'Выберите цвет', items: product.colors };
@@ -109,8 +121,8 @@ function getVariantType(product) {
 
 // ============ ОТПРАВКА В TELEGRAM ============
 async function sendOrderToTelegram(orderText) {
-    if (!shopConfig.botToken || shopConfig.botToken === "8629659554:AAH8jhO69OYbr0tnSQXuHKMdA3p3To7Ws7Q") {
-        console.log('Демо-режим: заказ не отправлен (настройте бота в data.json)');
+    if (!shopConfig.botToken || shopConfig.botToken === "ВАШ_ТОКЕН_БОТА") {
+        console.log('Демо-режим: заказ не отправлен');
         return;
     }
     try {
@@ -152,7 +164,7 @@ function checkout() {
     updateCartBadge();
 }
 
-// ============ МОДАЛЬНОЕ ОКНО (ПОСЛЕДОВАТЕЛЬНЫЙ ВЫБОР) ============
+// ============ МОДАЛЬНОЕ ОКНО ============
 function openProductModal(product) {
     currentProduct = product;
     selectedRange = null;
@@ -214,7 +226,6 @@ function openProductModal(product) {
             
             const variantInfo2 = getVariantType(product);
             if (variantInfo2) {
-                // Переход к шагу 2
                 document.getElementById('step1Container').style.opacity = '0.5';
                 const step2Container = document.getElementById('step2Container');
                 if (step2Container) step2Container.style.display = 'block';
@@ -222,7 +233,6 @@ function openProductModal(product) {
                 document.getElementById('addToCartBtn').textContent = '⬅️ Выберите вариант';
                 document.getElementById('addToCartBtn').classList.add('disabled');
             } else {
-                // Нет вариантов - сразу можно добавлять
                 document.getElementById('addToCartBtn').textContent = '🛒 Добавить в корзину';
                 document.getElementById('addToCartBtn').classList.remove('disabled');
             }
@@ -281,7 +291,6 @@ function closeModal() {
 // ============ РЕНДЕР СТРАНИЦ ============
 function renderProductCard(product) {
     const displayPrice = product.sale ? product.salePrice : Object.values(product.priceRanges)[0];
-    // Экранируем product для передачи в onclick
     const productJson = JSON.stringify(product).replace(/'/g, "&#39;");
     return `
         <div class="product-card" onclick='openProductModal(${productJson})'>
@@ -303,6 +312,11 @@ function escapeHtml(text) {
 }
 
 function renderShopPage() {
+    if (!products.length) {
+        document.getElementById('mainContent').innerHTML = '<div style="text-align:center; padding:50px">Загрузка товаров...</div>';
+        return;
+    }
+    
     const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
     let filtered = currentCategory === 'all' ? products : products.filter(p => p.category === currentCategory);
     if (searchTerm) filtered = filtered.filter(p => p.name.toLowerCase().includes(searchTerm) || p.description.toLowerCase().includes(searchTerm));
@@ -331,6 +345,10 @@ function renderShopPage() {
 }
 
 function renderSalesPage() {
+    if (!products.length) {
+        document.getElementById('mainContent').innerHTML = '<div style="text-align:center; padding:50px">Загрузка...</div>';
+        return;
+    }
     const saleProducts = products.filter(p => p.sale === true);
     let html = `<h2 class="section-title">🔥 Акции</h2><div class="products-grid">${saleProducts.length ? saleProducts.map(p => renderProductCard(p)).join('') : '<div style="text-align:center;padding:50px">Нет товаров по акции</div>'}</div>`;
     document.getElementById('mainContent').innerHTML = html;
@@ -364,4 +382,44 @@ function renderCartPage() {
         `;
     });
     html += `</div><div class="cart-total"><h3>Итого: ${total}₽</h3><button class="checkout-btn" id="checkoutBtn">✅ Оформить заказ</button></div>`;
-   
+    document.getElementById('mainContent').innerHTML = html;
+    
+    document.querySelectorAll('.quantity-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const idx = parseInt(btn.dataset.idx);
+            const delta = parseInt(btn.dataset.delta);
+            const newQty = cart[idx].quantity + delta;
+            if (newQty <= 0) cart.splice(idx, 1);
+            else cart[idx].quantity = newQty;
+            saveCart();
+            renderCartPage();
+            updateCartBadge();
+        });
+    });
+    
+    document.querySelectorAll('.remove-item').forEach(btn => {
+        btn.addEventListener('click', () => { 
+            cart.splice(parseInt(btn.dataset.idx), 1); 
+            saveCart(); 
+            renderCartPage(); 
+            updateCartBadge(); 
+        });
+    });
+    
+    document.getElementById('checkoutBtn')?.addEventListener('click', checkout);
+}
+
+function renderContactsPage() {
+    const phone = shopConfig.contactPhone || "+7 (999) 123-45-67";
+    document.getElementById('mainContent').innerHTML = `
+        <div class="contacts-page">
+            <h2 class="section-title">📞 Контакты</h2>
+            <div class="contact-phone">${phone}</div>
+            <p>Свяжитесь с нами любым удобным способом</p>
+            <p style="margin-top:20px; color:#888">Работаем ежедневно 10:00-21:00</p>
+        </div>
+    `;
+}
+
+// ============ ЗАПУСК ============
+loadData();
