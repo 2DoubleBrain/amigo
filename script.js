@@ -121,7 +121,8 @@ function getVariantType(product) {
 
 // ============ ОТПРАВКА В TELEGRAM ============
 async function sendOrderToTelegram(orderText) {
-    if (!shopConfig.botToken || shopConfig.botToken === "ВАШ_ТОКЕН_БОТА") {
+    if (!shopConfig.botToken || shopConfig.botToken === "8629659554:AAH8jhO69OYbr0tnSQXuHKMdA3p3To7Ws7Q") 
+    {
         console.log('Демо-режим: заказ не отправлен');
         return;
     }
