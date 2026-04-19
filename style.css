@@ -158,20 +158,30 @@ body {
     text-overflow: ellipsis;
 }
 
+/* Цена и SALE в одной строке */
+.product-price-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 5px 0;
+}
+
 .product-price {
     color: #e74c3c;
     font-weight: bold;
     font-size: 16px;
-    margin: 5px 0;
 }
 
 .sale-badge {
     background: #ff4444;
     color: white;
     font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 12px;
+    padding: 3px 8px;
+    border-radius: 20px;
     display: inline-block;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .open-btn {
