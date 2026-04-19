@@ -46,6 +46,13 @@ body {
     font-size: 22px;
 }
 
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .shop-title {
     color: #FFD700;
     font-size: 22px;
@@ -156,39 +163,40 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Цена и SALE в одной строке - ФИКСИРОВАННАЯ ВЫСОТА */
+/* Цена и SALE в одной строке - С ОТСТУПАМИ */
 .product-price-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8px;
-    margin: 5px 0;
+    gap: 12px;
+    margin: 8px 0 12px 0;
     width: 100%;
-    min-height: 28px;
+    min-height: 32px;
 }
 
 .product-price {
     color: #e74c3c;
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.3;
+    flex-shrink: 0;
 }
 
 .sale-badge {
     background: #ff4444;
     color: white;
     font-size: 10px;
-    padding: 3px 8px;
+    padding: 4px 10px;
     border-radius: 20px;
     display: inline-block;
     white-space: nowrap;
     flex-shrink: 0;
 }
 
-/* Пустой заглушка для одинаковой высоты */
+/* Пустой заглушка для одинаковой высоты - с отступами */
 .sale-placeholder {
     display: inline-block;
-    width: 58px;
+    width: 62px;
     height: 22px;
     visibility: hidden;
     flex-shrink: 0;
@@ -198,7 +206,7 @@ body {
     background: #1a1a2e;
     color: white;
     border: none;
-    padding: 8px;
+    padding: 10px 8px;
     border-radius: 25px;
     font-size: 12px;
     cursor: pointer;
