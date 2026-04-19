@@ -74,6 +74,7 @@ body {
 .main-content {
     padding: 15px;
     min-height: calc(100vh - 140px);
+    padding-bottom: 80px;
 }
 
 .section-title {
@@ -152,7 +153,6 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Цена и SALE в одной строке - С ОТСТУПАМИ */
 .product-price-wrapper {
     display: flex;
     align-items: center;
@@ -182,7 +182,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Пустой заглушка для одинаковой высоты - с отступами */
 .sale-placeholder {
     display: inline-block;
     width: 62px;
@@ -203,7 +202,6 @@ body {
     margin-top: auto;
 }
 
-/* МОДАЛЬНОЕ ОКНО */
 .modal-overlay {
     display: none;
     position: fixed;
@@ -339,7 +337,6 @@ body {
     border-color: #1a1a2e;
 }
 
-/* Количество товара */
 .quantity-selector {
     display: flex;
     align-items: center;
@@ -347,7 +344,7 @@ body {
     background: #f5f5f5;
     padding: 12px 16px;
     border-radius: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .quantity-selector label {
@@ -385,6 +382,21 @@ body {
     text-align: center;
 }
 
+.total-amount {
+    background: #1a1a2e;
+    color: #FFD700;
+    padding: 12px 16px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total-amount span {
+    font-size: 22px;
+}
+
 .add-to-cart-btn {
     background: #FFD700;
     color: #1a1a2e;
@@ -404,9 +416,8 @@ body {
     cursor: not-allowed;
 }
 
-/* КОРЗИНА */
 .cart-items-list {
-    max-height: 60vh;
+    max-height: calc(60vh - 20px);
     overflow-y: auto;
     margin-bottom: 15px;
 }
@@ -487,8 +498,10 @@ body {
 
 .empty-cart {
     text-align: center;
-    padding: 50px;
+    padding: 60px 20px;
     color: #888;
+    font-size: 16px;
+    margin-top: 40px;
 }
 
 .bottom-nav {
