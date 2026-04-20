@@ -5,7 +5,7 @@ let shopConfig = {};
 let cart = [];
 let currentPage = 'shop';
 let currentCategory = 'all';
-let currentPriceRange = null; // Текущий выбранный диапазон для корзины
+let currentPriceRange = null;
 
 // Переменные для модального окна
 let currentProduct = null;
@@ -22,6 +22,11 @@ const priceRangesConfig = [
     { key: '50000-100000', label: '50 000 - 100 000 ₽', minTotal: 50000, maxTotal: 100000 },
     { key: '100000-999999', label: '100 000+ ₽', minTotal: 100000, maxTotal: 999999 }
 ];
+
+function getRangeLabel(rangeKey) {
+    const range = priceRangesConfig.find(r => r.key === rangeKey);
+    return range ? range.label : rangeKey;
+}
 
 // ============ ЗАГРУЗКА ДАННЫХ ============
 async function loadData() {
@@ -48,15 +53,13 @@ async function loadData() {
         const savedCart = localStorage.getItem('amigoopt_cart');
         if (savedCart) {
             cart = JSON.parse(savedCart);
-            // Восстанавливаем цены в корзине на основе текущего диапазона
-            if (cart.length > 0 && cart[0].priceRangeKey) {
-                currentPriceRange = cart[0].priceRangeKey;
+            if (cart.length > 0) {
                 recalcCartPrices();
             }
         }
         
         const savedRange = localStorage.getItem('amigoopt_price_range');
-        if (savedRange && !currentPriceRange) {
+        if (savedRange && cart.length > 0) {
             currentPriceRange = savedRange;
         }
         
@@ -108,7 +111,7 @@ function switchPage(page) {
     updateCartBadge();
 }
 
-// ============ ЛОГИКА ПЕРЕСЧЕТА ЦЕН В КОРЗИНЕ ============
+// ============ ЛОГИКА ПЕРЕСЧЕТА ЦЕН ============
 function getPriceForRange(product, rangeKey) {
     if (product.sale && product.salePrice) return product.salePrice;
     return product.priceRanges[rangeKey] || Object.values(product.priceRanges)[0];
@@ -128,65 +131,69 @@ function getRangeKeyByTotal(total) {
 }
 
 function recalcCartPrices() {
-    if (!currentPriceRange) return;
+    if (!currentPriceRange && cart.length === 0) return;
     
-    let changed = false;
-    cart = cart.map(item => {
-        const product = products.find(p => p.id === item.id);
-        if (product) {
-            const newPrice = getPriceForRange(product, currentPriceRange);
-            if (item.price !== newPrice) {
-                changed = true;
-                return { ...item, price: newPrice, priceRangeKey: currentPriceRange };
+    if (cart.length > 0) {
+        const total = getCartTotal();
+        currentPriceRange = getRangeKeyByTotal(total);
+        localStorage.setItem('amigoopt_price_range', currentPriceRange);
+        
+        let changed = false;
+        cart = cart.map(item => {
+            const product = products.find(p => p.id === item.id);
+            if (product) {
+                const newPrice = getPriceForRange(product, currentPriceRange);
+                if (item.price !== newPrice) {
+                    changed = true;
+                    return { ...item, price: newPrice, appliedRange: currentPriceRange };
+                }
+                return { ...item, appliedRange: currentPriceRange };
             }
-            return { ...item, priceRangeKey: currentPriceRange };
+            return item;
+        });
+        
+        if (changed) {
+            saveCart();
+            if (currentPage === 'cart') renderCartPage();
+            updateCartBadge();
         }
-        return item;
-    });
-    
-    if (changed) {
-        saveCart();
-        if (currentPage === 'cart') renderCartPage();
-        updateCartBadge();
     }
-}
-
-function updateCartPricesForNewRange(newRangeKey) {
-    const oldRange = currentPriceRange;
-    currentPriceRange = newRangeKey;
-    localStorage.setItem('amigoopt_price_range', newRangeKey);
-    
-    let changed = false;
-    cart = cart.map(item => {
-        const product = products.find(p => p.id === item.id);
-        if (product) {
-            const newPrice = getPriceForRange(product, newRangeKey);
-            if (item.price !== newPrice) {
-                changed = true;
-                return { ...item, price: newPrice, priceRangeKey: newRangeKey };
-            }
-            return { ...item, priceRangeKey: newRangeKey };
-        }
-        return item;
-    });
-    
-    if (changed) {
-        saveCart();
-        if (currentPage === 'cart') renderCartPage();
-        updateCartBadge();
-        return true;
-    }
-    return false;
 }
 
 function checkAndUpdateRangeByTotal() {
+    if (cart.length === 0) {
+        currentPriceRange = null;
+        localStorage.removeItem('amigoopt_price_range');
+        return false;
+    }
+    
     const total = getCartTotal();
     const newRangeKey = getRangeKeyByTotal(total);
     
     if (newRangeKey !== currentPriceRange) {
         currentPriceRange = newRangeKey;
         localStorage.setItem('amigoopt_price_range', newRangeKey);
-        recalcCartPrices();
+        
+        let changed = false;
+        cart = cart.map(item => {
+            const product = products.find(p => p.id === item.id);
+            if (product) {
+                const newPrice = getPriceForRange(product, currentPriceRange);
+                if (item.price !== newPrice) {
+                    changed = true;
+                    return { ...item, price: newPrice, appliedRange: currentPriceRange };
+                }
+                return { ...item, appliedRange: currentPriceRange };
+            }
+            return item;
+        });
+        
+        if (changed) {
+            saveCart();
+            if (currentPage === 'cart') renderCartPage();
+            updateCartBadge();
+            if (currentPage === 'shop') renderShopPage();
+        }
         return true;
     }
     return false;
@@ -256,7 +263,8 @@ function checkout() {
         const itemTotal = item.price * item.quantity;
         total += itemTotal;
         order += `📦 ${item.name}\n   💰 ${item.price}₽ × ${item.quantity} = ${itemTotal}₽\n`;
-        if (item.selectedRange) order += `   📊 ${item.selectedRange}\n`;
+        if (item.selectedRange) order += `   📊 Выбранный диапазон: ${item.selectedRange}\n`;
+        if (item.appliedRange) order += `   📊 Диапазон корзины: ${getRangeLabel(item.appliedRange)}\n`;
         if (item.selectedVariant) order += `   🎨 ${item.selectedVariant}\n`;
         order += `\n`;
     });
@@ -289,12 +297,12 @@ function openProductModal(product) {
         '100000-999999': '100 000+ ₽'
     };
     
-    // Показываем только те диапазоны, которые есть у товара
+    // Показываем ВСЕ 5 диапазонов
     let rangesHtml = '<div class="range-options">';
     for (const range of priceRangesConfig) {
-        if (product.priceRanges[range.key]) {
-            const price = product.priceRanges[range.key];
-            rangesHtml += `<button class="range-btn" data-range="${range.key}" data-price="${price}">${rangeMap[range.key] || range.label} — ${price}₽/шт</button>`;
+        const price = product.priceRanges[range.key];
+        if (price !== undefined) {
+            rangesHtml += `<button class="range-btn" data-range="${range.key}" data-price="${price}">${rangeMap[range.key]} — ${price}₽/шт</button>`;
         }
     }
     rangesHtml += '</div>';
@@ -473,7 +481,7 @@ function openProductModal(product) {
             id: product.id,
             name: product.name,
             price: selectedPrice,
-            selectedRange: selectedRange,
+            selectedRange: getRangeLabel(selectedRange),
             selectedVariant: selectedVariant || null,
             quantity: selectedQuantity,
             priceRangeKey: selectedRange
@@ -481,15 +489,10 @@ function openProductModal(product) {
         
         saveCart();
         
-        // Проверяем и обновляем диапазон корзины
-        const total = getCartTotal();
-        const newRangeKey = getRangeKeyByTotal(total);
+        const wasUpdated = checkAndUpdateRangeByTotal();
         
-        if (newRangeKey !== currentPriceRange) {
-            currentPriceRange = newRangeKey;
-            localStorage.setItem('amigoopt_price_range', newRangeKey);
-            recalcCartPrices();
-            alert(`✅ Товар добавлен!\n\n📊 Ваша корзина теперь в диапазоне ${getRangeLabel(newRangeKey)}. Цены пересчитаны.`);
+        if (wasUpdated) {
+            alert(`✅ Товар добавлен!\n\n📊 Ваша корзина теперь в диапазоне ${getRangeLabel(currentPriceRange)}. Цены пересчитаны.`);
         } else {
             alert('✅ Товар добавлен в корзину');
         }
@@ -498,11 +501,6 @@ function openProductModal(product) {
         if (currentPage === 'cart') renderCartPage();
         updateCartBadge();
     };
-}
-
-function getRangeLabel(rangeKey) {
-    const range = priceRangesConfig.find(r => r.key === rangeKey);
-    return range ? range.label : rangeKey;
 }
 
 function closeModal() {
@@ -607,17 +605,23 @@ function renderCartPage() {
     const currentRangeLabel = currentPriceRange ? getRangeLabel(currentPriceRange) : 'не выбран';
     
     let html = `<h2 class="section-title">🛒 Корзина</h2>`;
-    html += `<div class="range-notification">📊 Текущий ценовой диапазон: <strong>${currentRangeLabel}</strong><br>💰 Сумма корзины: ${total} ₽</div>`;
+    html += `<div class="range-notification">📊 Текущий ценовой диапазон корзины: <strong>${currentRangeLabel}</strong><br>💰 Сумма корзины: ${total} ₽</div>`;
     html += `<div class="cart-items-list">`;
     
     cart.forEach((item, idx) => {
         const itemTotal = item.price * item.quantity;
+        const appliedRangeLabel = item.appliedRange ? getRangeLabel(item.appliedRange) : (item.priceRangeKey ? getRangeLabel(item.priceRangeKey) : currentRangeLabel);
+        
         html += `
             <div class="cart-item">
                 <div class="cart-item-info">
                     <div class="cart-item-title">${escapeHtml(item.name)}</div>
                     <div class="cart-item-price">${item.price}₽ × ${item.quantity} = ${itemTotal}₽</div>
-                    <div class="cart-item-details">${item.selectedRange ? `Сумма: ${item.selectedRange}` : ''}${item.selectedVariant ? ` | ${escapeHtml(item.selectedVariant)}` : ''}</div>
+                    <div class="cart-item-details">
+                        ${item.selectedRange ? `Выбранный диапазон: ${item.selectedRange}<br>` : ''}
+                        <small>📊 Диапазон корзины: ${appliedRangeLabel}</small>
+                        ${item.selectedVariant ? `<br>🎨 ${escapeHtml(item.selectedVariant)}` : ''}
+                    </div>
                 </div>
                 <div class="cart-item-controls">
                     <button class="quantity-btn" data-idx="${idx}" data-delta="-1">−</button>
@@ -640,7 +644,6 @@ function renderCartPage() {
             else cart[idx].quantity = newQty;
             saveCart();
             
-            // Проверяем и обновляем диапазон после изменения количества
             const wasUpdated = checkAndUpdateRangeByTotal();
             if (wasUpdated) {
                 alert(`📊 Сумма корзины изменилась. Цены пересчитаны для диапазона ${getRangeLabel(currentPriceRange)}`);
