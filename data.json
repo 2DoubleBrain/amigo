@@ -3696,10 +3696,10 @@
       "description": "",
       "category": "Жидкости",
       "priceRanges": {
-        "3000-10000": 250,
-        "10000-30000": 240,
-        "30000-50000": 235,
-        "50000-100000": 230,
+        "3000-10000": 220,
+        "10000-30000": 220,
+        "30000-50000": 220,
+        "50000-100000": 220,
         "100000-999999": 220
       },
       "flavors": [
@@ -3722,8 +3722,8 @@
       ],
       "colors": null,
       "resistances": null,
-      "sale": false,
-      "salePrice": null,
+      "sale": true,
+      "salePrice": 220,
       "photo": "https://i.postimg.cc/XvzDjBh1/5426927891783554481.jpg",
       "popular": false
     },
@@ -4083,10 +4083,10 @@
       "description": "",
       "category": "Жидкости",
       "priceRanges": {
-        "3000-10000": 260,
-        "10000-30000": 250,
-        "30000-50000": 245,
-        "50000-100000": 240,
+        "3000-10000": 230,
+        "10000-30000": 230,
+        "30000-50000": 230,
+        "50000-100000": 230,
         "100000-999999": 230
       },
       "flavors": [
@@ -4108,8 +4108,8 @@
       ],
       "colors": null,
       "resistances": null,
-      "sale": false,
-      "salePrice": null,
+      "sale": true,
+      "salePrice": 230,
       "photo": "https://i.postimg.cc/cCRcqvw3/5426927891783554474.jpg",
       "popular": false
     },
@@ -4211,10 +4211,10 @@
       "description": "",
       "category": "Жидкости",
       "priceRanges": {
-        "3000-10000": 270,
-        "10000-30000": 260,
-        "30000-50000": 250,
-        "50000-100000": 245,
+        "3000-10000": 240,
+        "10000-30000": 240,
+        "30000-50000": 240,
+        "50000-100000": 240,
         "100000-999999": 240
       },
       "flavors": [
@@ -4282,8 +4282,8 @@
       ],
       "colors": null,
       "resistances": null,
-      "sale": false,
-      "salePrice": null,
+      "sale": true,
+      "salePrice": 240,
       "photo": "https://i.postimg.cc/fb0BsctS/5440618924673274985.jpg",
       "popular": false
     },
@@ -4293,10 +4293,10 @@
       "description": "",
       "category": "Жидкости",
       "priceRanges": {
-        "3000-10000": 270,
-        "10000-30000": 260,
-        "30000-50000": 250,
-        "50000-100000": 245,
+        "3000-10000": 240,
+        "10000-30000": 240,
+        "30000-50000": 240,
+        "50000-100000": 240,
         "100000-999999": 240
       },
       "flavors": [
@@ -4336,8 +4336,8 @@
       ],
       "colors": null,
       "resistances": null,
-      "sale": false,
-      "salePrice": null,
+      "sale": true,
+      "salePrice": 240,
       "photo": "https://i.postimg.cc/Dw0xjk7P/5440618924673274986.jpg",
       "popular": false
     },
@@ -4347,10 +4347,10 @@
       "description": "",
       "category": "Жидкости",
       "priceRanges": {
-        "3000-10000": 290,
-        "10000-30000": 280,
-        "30000-50000": 275,
-        "50000-100000": 270,
+        "3000-10000": 260,
+        "10000-30000": 260,
+        "30000-50000": 260,
+        "50000-100000": 260,
         "100000-999999": 260
       },
       "flavors": [
@@ -4373,8 +4373,8 @@
       ],
       "colors": null,
       "resistances": null,
-      "sale": false,
-      "salePrice": null,
+      "sale": true,
+      "salePrice": 260,
       "photo": "https://i.postimg.cc/VvFKTzrd/5440618924673274989.jpg",
       "popular": false
     },
@@ -4384,10 +4384,10 @@
       "description": "",
       "category": "Жидкости",
       "priceRanges": {
-        "3000-10000": 290,
-        "10000-30000": 280,
-        "30000-50000": 275,
-        "50000-100000": 270,
+        "3000-10000": 260,
+        "10000-30000": 260,
+        "30000-50000": 260,
+        "50000-100000": 260,
         "100000-999999": 260
       },
       "flavors": [
@@ -4406,8 +4406,8 @@
       ],
       "colors": null,
       "resistances": null,
-      "sale": false,
-      "salePrice": null,
+      "sale": true,
+      "salePrice": 260,
       "photo": "https://i.postimg.cc/VvFKTzrd/5440618924673274989.jpg",
       "popular": false
     },
@@ -8473,6 +8473,43 @@
       "sale": true,
       "salePrice": 400,
       "photo": "https://i.postimg.cc/sDZDQ2GQ/photo-2026-06-10-15-07-55.jpg",
+      "popular": false
+    },
+    {
+      "id": 258,
+      "name": "ЖНЕЦ 30ML|70MG",
+      "description": "",
+      "category": "Жидкости",
+      "priceRanges": {
+        "3000-10000": 240,
+        "10000-30000": 240,
+        "30000-50000": 240,
+        "50000-100000": 240,
+        "100000-999999": 240
+      },
+      "flavors": [
+        "Ледяная кола",
+        "Холодная Черная Смородина",
+        "Холодное Зеленое Яблоко",
+        "Холодная Мятная Жвачка",
+        "Холодное Манго",
+        "Кислый Виноград",
+        "Кислая Маракуйя",
+        "Кислые Лимонные Червячки",
+        "Кислый Ананас",
+        "Кислая Дикая Малина",
+        "Абрикосовый Йогурт",
+        "Лесные Ягоды",
+        "Апельсиновый Фреш",
+        "Клубничный Земляничный Бабл гам",
+        "Кокос Малина",
+        "MIX"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": true,
+      "salePrice": 240,
+      "photo": "https://i.postimg.cc/sfcmR1Bj/526de6a6-7782-4529-a53f-a047f1e38fdc.jpg",
       "popular": false
     }
   ]
