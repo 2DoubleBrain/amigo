@@ -8994,6 +8994,138 @@
       "salePrice": 370,
       "photo": "https://i.postimg.cc/vBhgNq5T/5318974129316764144.jpg",
       "popular": false
+    },
+    {
+      "id": 272,
+      "name": "KPEKPE  PS 15000",
+      "description": "",
+      "category": "Электронки",
+      "priceRanges": {
+        "3000-10000": 330,
+        "10000-30000": 330,
+        "30000-50000": 330,
+        "50000-100000": 330,
+        "100000-999999": 330
+      },
+      "flavors": [
+        "Мята",
+        "Лимон апельсин",
+        "Черника малина",
+        "Черника арбуз",
+        "Клюква",
+        "Персик",
+        "Клубника ананас кокос",
+        "Яблочный микс",
+        "Вишня лайм",
+        "Кола ваниль",
+        "Виноград черная смородина",
+        "Лайм махито",
+        "Арбуз",
+        "Клубника",
+        "MIX"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": true,
+      "salePrice": 330,
+      "photo": "https://i.postimg.cc/BQ18shcD/5327988754569959979.jpg",
+      "popular": false
+    },
+    {
+      "id": 273,
+      "name": "PAVA 15000",
+      "description": "",
+      "category": "Электронки",
+      "priceRanges": {
+        "3000-10000": 300,
+        "10000-30000": 300,
+        "30000-50000": 300,
+        "50000-100000": 300,
+        "100000-999999": 300
+      },
+      "flavors": [
+        "Cherry cola",
+        "Orange sparkling water",
+        "Bluebbery raspberry",
+        "Fresh mint",
+        "Purple grapes",
+        "Gummy bear",
+        "Blueberry sour raspberry",
+        "Watermelon ice",
+        "MIX"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": true,
+      "salePrice": 320,
+      "photo": "https://i.postimg.cc/cHr33dYc/5327988754569959990.jpg",
+      "popular": false
+    },
+    {
+      "id": 274,
+      "name": "KFBAR 20000",
+      "description": "",
+      "category": "Электронки",
+      "priceRanges": {
+        "3000-10000": 350,
+        "10000-30000": 350,
+        "30000-50000": 350,
+        "50000-100000": 350,
+        "100000-999999": 350
+      },
+      "flavors": [
+        "MIX(уточнять)"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": true,
+      "salePrice": 350,
+      "photo": "https://i.postimg.cc/QdhWbQ1k/5327988754569959993.jpg",
+      "popular": false
+    },
+    {
+      "id": 275,
+      "name": "FIZZY 10000",
+      "description": "",
+      "category": "Электронки",
+      "priceRanges": {
+        "3000-10000": 330,
+        "10000-30000": 330,
+        "30000-50000": 330,
+        "50000-100000": 330,
+        "100000-999999": 330
+      },
+      "flavors": [
+        "MIX(уточнять)"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": true,
+      "salePrice": 330,
+      "photo": "https://i.postimg.cc/255LpCHF/5327988754569959994.jpg",
+      "popular": false
+    },
+    {
+      "id": 276,
+      "name": "OXBAR 2200 без дыма",
+      "description": "",
+      "category": "Электронки",
+      "priceRanges": {
+        "3000-10000": 230,
+        "10000-30000": 230,
+        "30000-50000": 230,
+        "50000-100000": 230,
+        "100000-999999": 230
+      },
+      "flavors": [
+        "MIX(уточнять)"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": true,
+      "salePrice": 230,
+      "photo": "https://i.postimg.cc/FzxhsLRn/5327988754569960000.jpg",
+      "popular": false
     }
   ]
 }
