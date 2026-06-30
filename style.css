@@ -667,4 +667,12 @@ body {
     .contacts-page {
         padding: 30px 20px;
     }
+    .sub-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 15px 0 12px 0;
+    color: #1a1a2e;
+    border-left: 3px solid #FF8C00;
+    padding-left: 10px;
+}
 }
