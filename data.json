@@ -9247,7 +9247,7 @@
     },
     {
       "id": 280,
-      "name": "HOTSPOT x PODONKI - 30ML/60MG",
+      "name": "HOTSPOT x PODONKI 30ML/60MG",
       "description": "",
       "category": "Жидкости",
       "priceRanges": {
@@ -9285,6 +9285,42 @@
       "sale": false,
       "salePrice": 230,
       "photo": "https://i.postimg.cc/4NqNjYft/5339394319397362448.jpg",
+      "popular": false
+    },
+    {
+      "id": 281,
+      "name": "ISTERIKA CLASSIC 30ML/60MG",
+      "description": "",
+      "category": "Жидкости",
+      "priceRanges": {
+        "3000-10000": 270,
+        "10000-30000": 265,
+        "30000-50000": 255,
+        "50000-100000": 245,
+        "100000-999999": 235
+      },
+      "flavors": [
+        "Ананас ежевика",
+        "Арбузные леденцы",
+        "Ежевичный мармелад",
+        "Зелёный Бёрн",
+        "Клубника банан дыня",
+        "Клубника драгонфрут",
+        "Клубника малиновое варенье",
+        "Кола чупа-чупс",
+        "Лимонад черника",
+        "Маракуйя грейпфрут",
+        "Персик зеленый виноград",
+        "Черная смородина груша",
+        "Экзотик микс",
+        "Яблоко лесной микс",
+        "MIX"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": 230,
+      "photo": "https://i.postimg.cc/y8hwV2bX/5339394319397362449.jpg",
       "popular": false
     }
   ]
