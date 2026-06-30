@@ -90,7 +90,7 @@ function saveUserInfo(phoneNumber = null) {
 async function loadData() {
     try {
         console.log('Загрузка data.json...');
-        const response = await fetch('./data.json');
+        const response = await fetch('./data.json?' + Date.now());
         
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -107,6 +107,9 @@ async function loadData() {
             managerTgId: data.managerTgId,
             botToken: data.botToken
         };
+        
+        // Сортируем товары: новые (с большим id) сверху
+        products.sort((a, b) => b.id - a.id);
         
         const savedCart = localStorage.getItem('amigoopt_cart');
         if (savedCart) {
@@ -286,15 +289,12 @@ function getVariantType(product) {
 
 // ============ ОТПРАВКА ЗАКАЗА В TELEGRAM ============
 async function sendOrderToTelegram(orderText) {
-    // Проверяем наличие токена
     if (!shopConfig.botToken) {
         console.error('Токен бота не найден в конфиге');
         alert('⚠️ Заказ создан, но бот не настроен. Сообщите менеджеру.');
         return;
     }
     
-    // Убираем проверку на "ВАШ_ТОКЕН_БОТА" - это старая заглушка!
-    // Просто проверяем, что токен не пустой и не слишком короткий
     if (shopConfig.botToken.length < 20) {
         console.error('Токен бота похож на заглушку');
         alert('⚠️ Заказ создан, но бот не настроен. Сообщите менеджеру.');
@@ -462,7 +462,7 @@ function submitOrder() {
     updateCartBadge();
 }
 
-// ============ МОДАЛЬНОЕ ОКНО ТОВАРА (С ВОЗМОЖНОСТЬЮ ДОБАВЛЯТЬ НЕСКОЛЬКО РАЗ) ============
+// ============ МОДАЛЬНОЕ ОКНО ТОВАРА ============
 function openProductModal(product) {
     currentProduct = product;
     selectedRange = null;
@@ -661,7 +661,6 @@ function openProductModal(product) {
             return; 
         }
         
-        // Добавляем товар в корзину
         cart.push({
             id: product.id,
             name: product.name,
@@ -675,51 +674,40 @@ function openProductModal(product) {
         saveCart();
         updateCartBadge();
         
-        // Показываем уведомление
         alert(`✅ ${selectedQuantity} шт "${product.name}" добавлено в корзину`);
         
-        // СБРАСЫВАЕМ выбор, чтобы пользователь мог выбрать другой вариант ТОГО ЖЕ товара
-        // Но НЕ закрываем модальное окно!
         selectedVariant = null;
         selectedRange = null;
         selectedPrice = null;
         selectedQuantity = 1;
         
-        // Сбрасываем визуальное выделение кнопок
         document.querySelectorAll('.range-btn').forEach(btn => btn.classList.remove('selected'));
         if (variantInfo3) {
             document.querySelectorAll('.variant-option').forEach(btn => btn.classList.remove('selected'));
         }
         
-        // Сбрасываем количество
         const quantitySpan = document.getElementById('quantityValue');
         if (quantitySpan) quantitySpan.textContent = '1';
         
-        // Обновляем сумму
         updateTotalDisplay();
         
-        // Блокируем кнопку добавления до выбора новых параметров
         addBtn.textContent = '⬅️ Выберите параметры';
         addBtn.classList.add('disabled');
         
-        // Если есть варианты, скрываем контейнер количества до выбора варианта
         if (variantInfo3) {
             const quantityContainer = document.getElementById('quantityContainer');
             if (quantityContainer) quantityContainer.style.display = 'none';
             
-            // Делаем шаг 1 снова активным
             document.getElementById('step1Container').style.opacity = '1';
             const step2Container = document.getElementById('step2Container');
             if (step2Container) step2Container.style.display = 'none';
         } else {
-            // Если нет вариантов, делаем шаг 1 снова активным
             document.getElementById('step1Container').style.opacity = '1';
             const quantityContainer = document.getElementById('quantityContainer');
             if (quantityContainer) quantityContainer.style.display = 'none';
             addBtn.textContent = '⬅️ Сначала выберите сумму';
         }
         
-        // Пересчитываем цены в корзине
         const wasUpdated = checkAndUpdateRangeByTotal();
         if (wasUpdated && currentPage === 'cart') {
             renderCartPage();
@@ -737,6 +725,13 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+// ============ ОТОБРАЖЕНИЕ ============
+
+// Функция сортировки: новые товары сверху (по id)
+function sortProductsByNewest(productList) {
+    return [...productList].sort((a, b) => b.id - a.id);
 }
 
 function renderProductCard(product) {
@@ -773,8 +768,11 @@ function renderShopPage() {
     let filtered = currentCategory === 'all' ? products : products.filter(p => p.category === currentCategory);
     if (searchTerm) filtered = filtered.filter(p => p.name.toLowerCase().includes(searchTerm) || p.description.toLowerCase().includes(searchTerm));
     
-    const popular = filtered.filter(p => p.popular);
-    const other = filtered.filter(p => !p.popular);
+    // Сортируем: новые сверху
+    const sorted = sortProductsByNewest(filtered);
+    
+    const popular = sorted.filter(p => p.popular);
+    const other = sorted.filter(p => !p.popular);
     
     let html = `<div class="categories-grid"><div class="category-chip ${currentCategory === 'all' ? 'active' : ''}" data-cat="all">Все</div>`;
     categories.forEach(cat => { 
@@ -784,6 +782,12 @@ function renderShopPage() {
     
     if (currentPriceRange && cart.length > 0) {
         html += `<div class="range-notification">📊 Ваша корзина в диапазоне: ${getRangeLabel(currentPriceRange)}</div>`;
+    }
+    
+    // Добавляем раздел "Новинки" если есть товары с id > 250 (свежие)
+    const newProducts = sorted.filter(p => p.id > 250);
+    if (newProducts.length > 0) {
+        html += `<h2 class="section-title">🆕 Новинки</h2><div class="products-grid">${newProducts.map(p => renderProductCard(p)).join('')}</div>`;
     }
     
     if (popular.length) html += `<h2 class="section-title">⭐ Популярное</h2><div class="products-grid">${popular.map(p => renderProductCard(p)).join('')}</div>`;
@@ -806,7 +810,25 @@ function renderSalesPage() {
         return;
     }
     const saleProducts = products.filter(p => p.sale === true);
-    let html = `<h2 class="section-title">🔥 Акции</h2><div class="products-grid">${saleProducts.length ? saleProducts.map(p => renderProductCard(p)).join('') : '<div style="text-align:center;padding:50px">Нет товаров по акции</div>'}</div>`;
+    // Сортируем акционные товары: новые сверху
+    const sorted = sortProductsByNewest(saleProducts);
+    
+    // Новые акционные товары (id > 250)
+    const newSale = sorted.filter(p => p.id > 250);
+    const other = sorted.filter(p => p.id <= 250);
+    
+    let html = `<h2 class="section-title">🔥 Акции</h2>`;
+    
+    if (newSale.length > 0) {
+        html += `<h3 class="section-title sub-title">🆕 Новые акции</h3><div class="products-grid">${newSale.map(p => renderProductCard(p)).join('')}</div>`;
+    }
+    if (other.length > 0) {
+        html += `<h3 class="section-title sub-title">📦 Все акции</h3><div class="products-grid">${other.map(p => renderProductCard(p)).join('')}</div>`;
+    }
+    if (!saleProducts.length) {
+        html += `<div style="text-align:center;padding:50px">Нет товаров по акции</div>`;
+    }
+    
     document.getElementById('mainContent').innerHTML = html;
 }
 
