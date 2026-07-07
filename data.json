@@ -9322,6 +9322,38 @@
       "salePrice": 230,
       "photo": "https://i.postimg.cc/y8hwV2bX/5339394319397362449.jpg",
       "popular": false
+    },
+    {
+      "id": 282,
+      "name": "XEO 45000",
+      "description": "",
+      "category": "Электронки",
+      "priceRanges": {
+        "3000-10000": 430,
+        "10000-30000": 425,
+        "30000-50000": 420,
+        "50000-100000": 410,
+        "100000-999999": 400
+      },
+      "flavors": [
+        "Черника малина",
+        "Арбуз лёд",
+        "Клубника лёд",
+        "Ананас лёд",
+        "Микс ягоды",
+        "Спелая дыня",
+        "Ред Булл",
+        "Виноград",
+        "Малина лимонад",
+        "Черника",
+        "MIX"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": 230,
+      "photo": "https://i.postimg.cc/CMc5QrYz/5301135270415637710.jpg",
+      "popular": false
     }
   ]
 }
