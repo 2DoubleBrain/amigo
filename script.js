@@ -7,7 +7,6 @@ let currentPage = 'shop';
 let currentCategory = 'all';
 let currentPriceRange = null;
 
-// Переменные для модального окна
 let currentProduct = null;
 let selectedRange = null;
 let selectedPrice = null;
@@ -28,7 +27,7 @@ function getRangeLabel(rangeKey) {
     return range ? range.label : rangeKey;
 }
 
-// ============ ПОЛУЧЕНИЕ ИНФОРМАЦИИ О ПОЛЬЗОВАТЕЛЕ ============
+// ============ ПОЛЬЗОВАТЕЛЬ ============
 function getUserInfo() {
     let userName = 'Неизвестный';
     let userId = 'Неизвестно';
@@ -41,7 +40,6 @@ function getUserInfo() {
             userName = user.first_name || '';
             if (user.last_name) userName += ' ' + user.last_name;
             if (!userName.trim()) userName = 'Пользователь';
-            
             userId = user.id || 'Неизвестно';
             userUsername = user.username ? '@' + user.username : 'Нет username';
         }
@@ -89,16 +87,10 @@ function saveUserInfo(phoneNumber = null) {
 // ============ ЗАГРУЗКА ДАННЫХ ============
 async function loadData() {
     try {
-        console.log('Загрузка data.json...');
         const response = await fetch('./data.json?' + Date.now());
-        
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         
         const data = await response.json();
-        console.log('Данные загружены');
-        
         products = data.products;
         categories = data.categories;
         shopConfig = {
@@ -108,30 +100,23 @@ async function loadData() {
             botToken: data.botToken
         };
         
-        // Сортируем товары: новые (с большим id) сверху
         products.sort((a, b) => b.id - a.id);
         
         const savedCart = localStorage.getItem('amigoopt_cart');
         if (savedCart) {
             cart = JSON.parse(savedCart);
-            if (cart.length > 0) {
-                recalcCartPrices();
-            }
+            if (cart.length > 0) recalcCartPrices();
         }
         
         const savedRange = localStorage.getItem('amigoopt_price_range');
-        if (savedRange && cart.length > 0) {
-            currentPriceRange = savedRange;
-        }
+        if (savedRange && cart.length > 0) currentPriceRange = savedRange;
         
         if (window.Telegram && window.Telegram.WebApp) {
             window.Telegram.WebApp.expand();
         }
         
         initApp();
-        
     } catch (error) {
-        console.error('Ошибка загрузки:', error);
         document.getElementById('mainContent').innerHTML = `
             <div style="text-align:center; padding:50px; color:red;">
                 ❌ Ошибка загрузки данных<br>
@@ -172,13 +157,10 @@ function switchPage(page) {
     else if (page === 'contacts') renderContactsPage();
     
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    const mainContent = document.getElementById('mainContent');
-    if (mainContent) mainContent.scrollTop = 0;
-    
     updateCartBadge();
 }
 
-// ============ ЛОГИКА ПЕРЕСЧЕТА ЦЕН ============
+// ============ ПЕРЕСЧЕТ ЦЕН ============
 function getPriceForRange(product, rangeKey) {
     return product.priceRanges[rangeKey] || Object.values(product.priceRanges)[0];
 }
@@ -189,16 +171,13 @@ function getCartTotal() {
 
 function getRangeKeyByTotal(total) {
     for (const range of priceRangesConfig) {
-        if (total >= range.minTotal && total <= range.maxTotal) {
-            return range.key;
-        }
+        if (total >= range.minTotal && total <= range.maxTotal) return range.key;
     }
     return '100000-999999';
 }
 
 function recalcCartPrices() {
     if (!currentPriceRange && cart.length === 0) return;
-    
     if (cart.length > 0) {
         const total = getCartTotal();
         currentPriceRange = getRangeKeyByTotal(total);
@@ -287,69 +266,32 @@ function getVariantType(product) {
     return null;
 }
 
-// ============ ОТПРАВКА ЗАКАЗА В TELEGRAM ============
-async function sendOrderToTelegram(orderText) {
-    if (!shopConfig.botToken) {
-        console.error('Токен бота не найден в конфиге');
-        alert('⚠️ Заказ создан, но бот не настроен. Сообщите менеджеру.');
-        return;
-    }
+// ============ ОТПРАВКА ЗАКАЗА ЧЕРЕЗ sendData ============
+function sendOrderToTelegram(orderText) {
+    // Убираем HTML-теги для sendData (он не поддерживает parse_mode, приходит как текст)
+    const plainText = orderText.replace(/<[^>]*>/g, '');
     
-    if (shopConfig.botToken.length < 20) {
-        console.error('Токен бота похож на заглушку');
-        alert('⚠️ Заказ создан, но бот не настроен. Сообщите менеджеру.');
-        return;
-    }
-    
-    console.log('Попытка отправки заказа...');
-    console.log('Chat ID (менеджер):', shopConfig.managerTgId);
-    console.log('Токен бота:', shopConfig.botToken.substring(0, 15) + '...');
-    
-    try {
-        const response = await fetch(`https://api.telegram.org/bot${shopConfig.botToken}/sendMessage`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
-                chat_id: shopConfig.managerTgId, 
-                text: orderText, 
-                parse_mode: 'HTML' 
-            })
-        });
-        
-        const result = await response.json();
-        console.log('Ответ от Telegram:', result);
-        
-        if (result.ok) {
-            console.log('✅ Заказ успешно отправлен!');
+    if (window.Telegram && window.Telegram.WebApp && typeof window.Telegram.WebApp.sendData === 'function') {
+        try {
+            window.Telegram.WebApp.sendData(plainText);
             return true;
-        } else {
-            console.error('Ошибка Telegram API:', result.description);
-            alert(`❌ Ошибка отправки: ${result.description}\n\nПроверьте:\n1. Бот запущен?\n2. Менеджер написал боту /start?\n3. Правильный ли токен?`);
+        } catch (e) {
+            console.error('sendData error:', e);
             return false;
         }
-    } catch(error) {
-        console.error('Ошибка соединения:', error);
-        alert('⚠️ Ошибка соединения с Telegram. Заказ сохранен в корзине.\nСообщите менеджеру вручную.');
-        return false;
     }
+    
+    // Если не в Telegram — показываем запасной вариант
+    console.warn('Telegram WebApp недоступен');
+    return false;
 }
 
-// ============ ФОРМА ОФОРМЛЕНИЯ ЗАКАЗА ============
+// ============ ФОРМА ЗАКАЗА ============
 function openCheckoutForm() {
-    console.log('openCheckoutForm вызвана');
-    
-    if (cart.length === 0) {
-        alert('Корзина пуста');
-        return;
-    }
-    
+    if (cart.length === 0) { alert('Корзина пуста'); return; }
     const userInfo = getUserInfo();
-    
     const modal = document.getElementById('checkoutModal');
-    if (!modal) {
-        console.error('checkoutModal не найден в DOM');
-        return;
-    }
+    if (!modal) return;
     
     modal.innerHTML = `
         <div class="modal-content">
@@ -386,21 +328,15 @@ function openCheckoutForm() {
     `;
     modal.style.display = 'block';
     
-    const form = document.getElementById('orderForm');
-    if (form) {
-        form.onsubmit = (e) => {
-            e.preventDefault();
-            submitOrder();
-        };
-    }
+    document.getElementById('orderForm').onsubmit = (e) => {
+        e.preventDefault();
+        submitOrder();
+    };
 }
 
 function closeCheckoutModal() {
     const modal = document.getElementById('checkoutModal');
-    if (modal) {
-        modal.style.display = 'none';
-        modal.innerHTML = '';
-    }
+    if (modal) { modal.style.display = 'none'; modal.innerHTML = ''; }
 }
 
 function submitOrder() {
@@ -417,49 +353,43 @@ function submitOrder() {
     
     const userInfo = getUserInfo();
     
-    let order = '🛍️ <b>НОВЫЙ ЗАКАЗ</b>\n\n';
-    order += `━━━━━━━━━━━━━━━━\n`;
-    order += `<b>📋 ДАННЫЕ ПОКУПАТЕЛЯ</b>\n`;
-    order += `━━━━━━━━━━━━━━━━\n`;
-    order += `👤 <b>ФИО:</b> ${fullName}\n`;
-    order += `🏙️ <b>Город:</b> ${city}\n`;
-    order += `📍 <b>Адрес доставки:</b> ${address}\n`;
-    order += `📞 <b>Телефон:</b> ${phone}\n`;
-    order += `📱 <b>Telegram:</b> ${userInfo.userUsername}\n`;
-    order += `🆔 <b>Telegram ID:</b> <code>${userInfo.userId}</code>\n`;
-    if (comment) order += `💬 <b>Комментарий:</b> ${comment}\n`;
-    order += `━━━━━━━━━━━━━━━━\n\n`;
-    
-    order += `<b>🛒 СОСТАВ ЗАКАЗА</b>\n`;
-    order += `━━━━━━━━━━━━━━━━\n`;
+    let order = '🛍️ НОВЫЙ ЗАКАЗ\n\n';
+    order += `👤 ФИО: ${fullName}\n`;
+    order += `🏙️ Город: ${city}\n`;
+    order += `📍 Адрес: ${address}\n`;
+    order += `📞 Телефон: ${phone}\n`;
+    order += `📱 Telegram: ${userInfo.userUsername}\n`;
+    order += `🆔 ID: ${userInfo.userId}\n`;
+    if (comment) order += `💬 Комментарий: ${comment}\n`;
+    order += `\n🛒 СОСТАВ ЗАКАЗА:\n`;
     
     let total = 0;
     cart.forEach(item => {
         const itemTotal = item.price * item.quantity;
         total += itemTotal;
         order += `📦 ${item.name}\n`;
-        order += `   💰 ${item.price}₽ × ${item.quantity} = ${itemTotal}₽\n`;
-        if (item.selectedRange) order += `   📊 ${item.selectedRange}\n`;
-        if (item.selectedVariant) order += `   🎨 ${item.selectedVariant}\n`;
-        order += `\n`;
+        order += `   ${item.price}₽ × ${item.quantity} = ${itemTotal}₽\n`;
+        if (item.selectedRange) order += `   Диапазон: ${item.selectedRange}\n`;
+        if (item.selectedVariant) order += `   Вариант: ${item.selectedVariant}\n`;
     });
     
-    order += `━━━━━━━━━━━━━━━━\n`;
-    order += `<b>💰 ИТОГО: ${total}₽</b>\n\n`;
+    order += `\n💰 ИТОГО: ${total}₽\n`;
     order += `📅 ${new Date().toLocaleString('ru-RU')}`;
     
-    sendOrderToTelegram(order);
+    const sent = sendOrderToTelegram(order);
     
-    alert('✅ Заказ оформлен! Менеджер свяжется с вами в ближайшее время.');
-    
-    cart = [];
-    currentPriceRange = null;
-    localStorage.removeItem('amigoopt_price_range');
-    saveCart();
-    
-    closeCheckoutModal();
-    if (currentPage === 'cart') renderCartPage();
-    updateCartBadge();
+    if (sent) {
+        alert('✅ Заказ оформлен! Менеджер свяжется с вами.');
+        cart = [];
+        currentPriceRange = null;
+        localStorage.removeItem('amigoopt_price_range');
+        saveCart();
+        closeCheckoutModal();
+        if (currentPage === 'cart') renderCartPage();
+        updateCartBadge();
+    } else {
+        alert('⚠️ Не удалось отправить заказ. Откройте магазин через Telegram и попробуйте снова.');
+    }
 }
 
 // ============ МОДАЛЬНОЕ ОКНО ТОВАРА ============
@@ -534,54 +464,41 @@ function openProductModal(product) {
     `;
     modal.style.display = 'block';
     
-    const backBtn = document.getElementById('backModalBtn');
-    if (backBtn) {
-        backBtn.onclick = () => {
-            closeModal();
-        };
-    }
+    document.getElementById('backModalBtn').onclick = () => closeModal();
     
     function updateTotalDisplay() {
         const totalSpan = document.getElementById('totalSum');
-        if (totalSpan && selectedPrice) {
-            totalSpan.textContent = selectedPrice * selectedQuantity;
-        } else if (totalSpan) {
-            totalSpan.textContent = '0';
-        }
+        if (totalSpan && selectedPrice) totalSpan.textContent = selectedPrice * selectedQuantity;
+        else if (totalSpan) totalSpan.textContent = '0';
     }
     
     function resetVariantSelection() {
         selectedVariant = null;
-        const variantBtns = document.querySelectorAll('.variant-option');
-        variantBtns.forEach(btn => btn.classList.remove('selected'));
-        
+        document.querySelectorAll('.variant-option').forEach(btn => btn.classList.remove('selected'));
         const addBtn = document.getElementById('addToCartBtn');
         addBtn.textContent = '⬅️ Сначала выберите сумму';
         addBtn.classList.add('disabled');
-        
-        const quantityContainer = document.getElementById('quantityContainer');
-        if (quantityContainer) quantityContainer.style.display = 'none';
+        const qc = document.getElementById('quantityContainer');
+        if (qc) qc.style.display = 'none';
     }
     
     function setupQuantityButtons() {
         const decreaseBtn = document.getElementById('decreaseQty');
         const increaseBtn = document.getElementById('increaseQty');
         const quantitySpan = document.getElementById('quantityValue');
-        
         if (decreaseBtn && increaseBtn && quantitySpan) {
-            const newDecreaseBtn = decreaseBtn.cloneNode(true);
-            const newIncreaseBtn = increaseBtn.cloneNode(true);
-            decreaseBtn.parentNode.replaceChild(newDecreaseBtn, decreaseBtn);
-            increaseBtn.parentNode.replaceChild(newIncreaseBtn, increaseBtn);
-            
-            newDecreaseBtn.onclick = () => {
+            const newDec = decreaseBtn.cloneNode(true);
+            const newInc = increaseBtn.cloneNode(true);
+            decreaseBtn.parentNode.replaceChild(newDec, decreaseBtn);
+            increaseBtn.parentNode.replaceChild(newInc, increaseBtn);
+            newDec.onclick = () => {
                 if (selectedQuantity > 1) {
                     selectedQuantity--;
                     quantitySpan.textContent = selectedQuantity;
                     updateTotalDisplay();
                 }
             };
-            newIncreaseBtn.onclick = () => {
+            newInc.onclick = () => {
                 selectedQuantity++;
                 quantitySpan.textContent = selectedQuantity;
                 updateTotalDisplay();
@@ -608,20 +525,20 @@ function openProductModal(product) {
                 selectedPrice = newPrice;
             }
             
-            const variantInfo2 = getVariantType(product);
-            if (variantInfo2) {
+            const vInfo = getVariantType(product);
+            if (vInfo) {
                 document.getElementById('step1Container').style.opacity = '0.5';
-                const step2Container = document.getElementById('step2Container');
-                if (step2Container) {
-                    step2Container.style.display = 'block';
-                    step2Container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                const step2 = document.getElementById('step2Container');
+                if (step2) {
+                    step2.style.display = 'block';
+                    step2.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
                 document.getElementById('addToCartBtn').textContent = '⬅️ Выберите вариант';
                 document.getElementById('addToCartBtn').classList.add('disabled');
             } else {
                 document.getElementById('step1Container').style.opacity = '0.5';
-                const quantityContainer = document.getElementById('quantityContainer');
-                if (quantityContainer) quantityContainer.style.display = 'block';
+                const qc = document.getElementById('quantityContainer');
+                if (qc) qc.style.display = 'block';
                 document.getElementById('addToCartBtn').textContent = '🛒 Добавить в корзину';
                 document.getElementById('addToCartBtn').classList.remove('disabled');
                 setupQuantityButtons();
@@ -638,8 +555,8 @@ function openProductModal(product) {
                     btn.classList.add('selected');
                     selectedVariant = btn.dataset.variant;
                     
-                    const quantityContainer = document.getElementById('quantityContainer');
-                    if (quantityContainer) quantityContainer.style.display = 'block';
+                    const qc = document.getElementById('quantityContainer');
+                    if (qc) qc.style.display = 'block';
                     
                     document.getElementById('addToCartBtn').textContent = '🛒 Добавить в корзину';
                     document.getElementById('addToCartBtn').classList.remove('disabled');
@@ -651,15 +568,9 @@ function openProductModal(product) {
     
     const addBtn = document.getElementById('addToCartBtn');
     addBtn.onclick = () => {
-        if (!selectedRange) { 
-            alert('Сначала выберите сумму заказа'); 
-            return; 
-        }
-        const variantInfo3 = getVariantType(product);
-        if (variantInfo3 && !selectedVariant) { 
-            alert('Выберите вариант'); 
-            return; 
-        }
+        if (!selectedRange) { alert('Сначала выберите сумму заказа'); return; }
+        const vInfo = getVariantType(product);
+        if (vInfo && !selectedVariant) { alert('Выберите вариант'); return; }
         
         cart.push({
             id: product.id,
@@ -673,7 +584,6 @@ function openProductModal(product) {
         
         saveCart();
         updateCartBadge();
-        
         alert(`✅ ${selectedQuantity} шт "${product.name}" добавлено в корзину`);
         
         selectedVariant = null;
@@ -682,36 +592,30 @@ function openProductModal(product) {
         selectedQuantity = 1;
         
         document.querySelectorAll('.range-btn').forEach(btn => btn.classList.remove('selected'));
-        if (variantInfo3) {
-            document.querySelectorAll('.variant-option').forEach(btn => btn.classList.remove('selected'));
-        }
+        if (vInfo) document.querySelectorAll('.variant-option').forEach(btn => btn.classList.remove('selected'));
         
-        const quantitySpan = document.getElementById('quantityValue');
-        if (quantitySpan) quantitySpan.textContent = '1';
+        const qs = document.getElementById('quantityValue');
+        if (qs) qs.textContent = '1';
         
         updateTotalDisplay();
-        
         addBtn.textContent = '⬅️ Выберите параметры';
         addBtn.classList.add('disabled');
         
-        if (variantInfo3) {
-            const quantityContainer = document.getElementById('quantityContainer');
-            if (quantityContainer) quantityContainer.style.display = 'none';
-            
+        if (vInfo) {
+            const qc = document.getElementById('quantityContainer');
+            if (qc) qc.style.display = 'none';
             document.getElementById('step1Container').style.opacity = '1';
-            const step2Container = document.getElementById('step2Container');
-            if (step2Container) step2Container.style.display = 'none';
+            const s2 = document.getElementById('step2Container');
+            if (s2) s2.style.display = 'none';
         } else {
             document.getElementById('step1Container').style.opacity = '1';
-            const quantityContainer = document.getElementById('quantityContainer');
-            if (quantityContainer) quantityContainer.style.display = 'none';
+            const qc = document.getElementById('quantityContainer');
+            if (qc) qc.style.display = 'none';
             addBtn.textContent = '⬅️ Сначала выберите сумму';
         }
         
         const wasUpdated = checkAndUpdateRangeByTotal();
-        if (wasUpdated && currentPage === 'cart') {
-            renderCartPage();
-        }
+        if (wasUpdated && currentPage === 'cart') renderCartPage();
     };
 }
 
@@ -728,17 +632,13 @@ function escapeHtml(text) {
 }
 
 // ============ ОТОБРАЖЕНИЕ ============
-
-// Функция сортировки: новые товары сверху (по id)
 function sortProductsByNewest(productList) {
     return [...productList].sort((a, b) => b.id - a.id);
 }
 
 function renderProductCard(product) {
     let displayPrice = product.priceRanges['100000-999999'] || Object.values(product.priceRanges)[0];
-    
     const productJson = JSON.stringify(product).replace(/'/g, "&#39;").replace(/"/g, '&quot;');
-    
     const rightContent = product.sale 
         ? '<span class="sale-badge">🔥 SALE</span>' 
         : '<span class="sale-placeholder"></span>';
@@ -768,9 +668,7 @@ function renderShopPage() {
     let filtered = currentCategory === 'all' ? products : products.filter(p => p.category === currentCategory);
     if (searchTerm) filtered = filtered.filter(p => p.name.toLowerCase().includes(searchTerm) || p.description.toLowerCase().includes(searchTerm));
     
-    // Сортируем: новые сверху
     const sorted = sortProductsByNewest(filtered);
-    
     const popular = sorted.filter(p => p.popular);
     const other = sorted.filter(p => !p.popular);
     
@@ -784,7 +682,6 @@ function renderShopPage() {
         html += `<div class="range-notification">📊 Ваша корзина в диапазоне: ${getRangeLabel(currentPriceRange)}</div>`;
     }
     
-    // Добавляем раздел "Новинки" если есть товары с id > 250 (свежие)
     const newProducts = sorted.filter(p => p.id > 250);
     if (newProducts.length > 0) {
         html += `<h2 class="section-title">🆕 Новинки</h2><div class="products-grid">${newProducts.map(p => renderProductCard(p)).join('')}</div>`;
@@ -810,10 +707,7 @@ function renderSalesPage() {
         return;
     }
     const saleProducts = products.filter(p => p.sale === true);
-    // Сортируем акционные товары: новые сверху
     const sorted = sortProductsByNewest(saleProducts);
-    
-    // Новые акционные товары (id > 250)
     const newSale = sorted.filter(p => p.id > 250);
     const other = sorted.filter(p => p.id <= 250);
     
@@ -907,9 +801,7 @@ function renderCartPage() {
     });
     
     const checkoutBtn = document.getElementById('checkoutBtn');
-    if (checkoutBtn) {
-        checkoutBtn.addEventListener('click', openCheckoutForm);
-    }
+    if (checkoutBtn) checkoutBtn.addEventListener('click', openCheckoutForm);
 }
 
 function renderContactsPage() {
