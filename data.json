@@ -14,64 +14,6 @@
   "products": [
     {
       "id": 1,
-      "name": "ICON 40000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 510,
-        "10000-30000": 500,
-        "30000-50000": 490,
-        "50000-100000": 485,
-        "100000-999999": 480
-      },
-      "flavors": [
-        "Hawaii blueberry ice",
-        "Ice mint",
-        "Californiya cherry",
-        "Grape ace",
-        "Strawberry watermelon",
-        "Watermelon ice",
-        "Mexican mango",
-        "Микс вкусов"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/Z5NgqkWT/5438367124859590047-(1).jpg",
-      "popular": false
-    },
-    {
-      "id": 2,
-      "name": "ICON 30000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 460,
-        "10000-30000": 450,
-        "30000-50000": 440,
-        "50000-100000": 435,
-        "100000-999999": 430
-      },
-      "flavors": [
-        "Californiya cherry",
-        "Apple peach",
-        "Grape ice",
-        "Peach ice",
-        "Ice mint",
-        "Mexican mango",
-        "Watermelon ice",
-        "Микс вкусов"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/jdpgm8Z8/5438367124859590054.jpg",
-      "popular": false
-    },
-    {
-      "id": 3,
       "name": "BUBBLE MON 20000",
       "description": "",
       "category": "Электронки",
@@ -113,7 +55,7 @@
       "popular": false
     },
     {
-      "id": 4,
+      "id": 2,
       "name": "FUMMO GTS 18000",
       "description": "",
       "category": "Электронки",
@@ -146,51 +88,7 @@
       "popular": false
     },
     {
-      "id": 5,
-      "name": "HUSKY 16000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 455,
-        "10000-30000": 450,
-        "30000-50000": 440,
-        "50000-100000": 435,
-        "100000-999999": 430
-      },
-      "flavors": [
-        "Уточнить у менеджера"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/MpSG5dWC/5440618924673274815.jpg",
-      "popular": false
-    },
-    {
-      "id": 6,
-      "name": "MFU 25000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 410,
-        "10000-30000": 405,
-        "30000-50000": 400,
-        "50000-100000": 390,
-        "100000-999999": 380
-      },
-      "flavors": [
-        "Уточнить у менеджера"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/4xdSDTNt/5440618924673274820.jpg",
-      "popular": false
-    },
-    {
-      "id": 7,
+      "id": 3,
       "name": "MOSMO DL STORM X 30000",
       "description": "",
       "category": "Электронки",
@@ -232,7 +130,7 @@
       "popular": false
     },
     {
-      "id": 8,
+      "id": 4,
       "name": "NEXA PRO 30000",
       "description": "",
       "category": "Электронки",
@@ -268,7 +166,7 @@
       "popular": false
     },
     {
-      "id": 9,
+      "id": 5,
       "name": "PAFOS 20000",
       "description": "",
       "category": "Электронки",
@@ -312,43 +210,7 @@
       "popular": false
     },
     {
-      "id": 10,
-      "name": "MOBO 18000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 435,
-        "10000-30000": 425,
-        "30000-50000": 420,
-        "50000-100000": 410,
-        "100000-999999": 400
-      },
-      "flavors": [
-        "Lady killer",
-        "Tropical coconut pineapple",
-        "Peach mango watermelon",
-        "Bubbly melon",
-        "Sour raspberry bubble gum",
-        "Supernova",
-        "Berry party",
-        "Blue razz ice",
-        "Strawberry watermelon ice",
-        "Strawnana",
-        "Strawberry kiwi",
-        "Sour apple ice",
-        "Cool mint",
-        "Juicy rainbow ice",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/hGLfgVfF/5426927891783554492.jpg",
-      "popular": false
-    },
-    {
-      "id": 11,
+      "id": 6,
       "name": "RICK AND MORTY BAD ACID 30000",
       "description": "",
       "category": "Электронки",
@@ -390,7 +252,7 @@
       "popular": false
     },
     {
-      "id": 12,
+      "id": 7,
       "name": "RICK AND MORTY BAD DRIP 25000",
       "description": "",
       "category": "Электронки",
@@ -432,41 +294,7 @@
       "popular": false
     },
     {
-      "id": 13,
-      "name": "INSTA BAR BE 40000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 840,
-        "10000-30000": 830,
-        "30000-50000": 820,
-        "50000-100000": 810,
-        "100000-999999": 810
-      },
-      "flavors": [
-        "Кислый Чернослив",
-        "Сакура Мята",
-        "Манго Ананас Персик Лед",
-        "Миндальное Мороженое",
-        "Вишня Персик Лимон",
-        "Вишневая Кола",
-        "Арбузный Лёд",
-        "Клюква Виноград",
-        "Клубничный Киви",
-        "Яблоко Персик",
-        "Клюквенная Сода",
-        "Малиновый Йогурт",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/fWqXH4Fg/5440618924673274830.jpg",
-      "popular": false
-    },
-    {
-      "id": 14,
+      "id": 8,
       "name": "РИК И МОРТИ НА ЗАМЕРЗОНЕ КИСЛЫЙ 20000",
       "description": "",
       "category": "Электронки",
@@ -508,7 +336,7 @@
       "popular": false
     },
     {
-      "id": 15,
+      "id": 9,
       "name": "РИК И МОРТИ НА ЗАМЕРЗОНЕ 20000",
       "description": "",
       "category": "Электронки",
@@ -559,7 +387,7 @@
       "popular": false
     },
     {
-      "id": 16,
+      "id": 10,
       "name": "DRAGBAR 30000",
       "description": "",
       "category": "Электронки",
@@ -596,16 +424,16 @@
       "popular": false
     },
     {
-      "id": 17,
+      "id": 11,
       "name": "FUNKY LANDS & LOST MARY 30000 V2",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 860,
-        "10000-30000": 850,
-        "30000-50000": 840,
-        "50000-100000": 830,
-        "100000-999999": 820
+        "3000-10000": 830,
+        "10000-30000": 820,
+        "30000-50000": 810,
+        "50000-100000": 800,
+        "100000-999999": 790
       },
       "flavors": [
         "Клубника банан",
@@ -630,7 +458,7 @@
       "popular": false
     },
     {
-      "id": 18,
+      "id": 12,
       "name": "FUNKY LANDS & LOST MARY 30000",
       "description": "",
       "category": "Электронки",
@@ -670,7 +498,7 @@
       "popular": false
     },
     {
-      "id": 19,
+      "id": 13,
       "name": "Kokin & Onu Hero Bar 12000",
       "description": "",
       "category": "Электронки",
@@ -692,168 +520,7 @@
       "popular": false
     },
     {
-      "id": 20,
-      "name": "IQRO 40000 Телефон",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 550,
-        "10000-30000": 545,
-        "30000-50000": 540,
-        "50000-100000": 530,
-        "100000-999999": 520
-      },
-      "flavors": [
-        "Розовый лимонад",
-        "Энергетик",
-        "⁠Клубничное мороженое",
-        "⁠Черная смородина",
-        "⁠Двойное яблоко",
-        "⁠Арбуз лед",
-        "⁠Смешные фрукты",
-        "⁠Черника",
-        "Мята лед",
-        "⁠Манго клубника",
-        "Мохито",
-        "⁠Микс ягоды",
-        "Капучино",
-        "Сочный виноград лед",
-        "Персик",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/4d7Kqyrg/5440618924673274834.jpg",
-      "popular": false
-    },
-    {
-      "id": 21,
-      "name": "SNOOPYGOST MAX 60000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 560,
-        "10000-30000": 555,
-        "30000-50000": 550,
-        "50000-100000": 545,
-        "100000-999999": 540
-      },
-      "flavors": [
-        "Ледяная мята",
-        "Тройные ягоды лед",
-        "Мармелад",
-        "Лимон ежевика малина",
-        "Вишня малина апельсин",
-        "Пинаколада",
-        "Вишня лимон",
-        "Мексиканское манго лед",
-        "Малина грейпфрут",
-        "Табак",
-        "Арбузная жвачка",
-        "Клубника банан",
-        "Клбква виноград",
-        "Клубника киви",
-        "Энергетический взрыв",
-        "Ананас манго",
-        "Холодное кислое яблоко",
-        "Микс ягоды лед",
-        "Персик арбуз лед",
-        "Черника малина лед",
-        "Лаймово-мятный энергетик",
-        "Виноград лед",
-        "Ледяная кола",
-        "Лимон лайм",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/15sMZKtL/5426927891783554484.jpg",
-      "popular": false
-    },
-    {
-      "id": 22,
-      "name": "SNOOPYSMOKE 25000 ANG",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 430,
-        "10000-30000": 420,
-        "30000-50000": 410,
-        "50000-100000": 400,
-        "100000-999999": 390
-      },
-      "flavors": [
-        "Персик арбузный лед",
-        "Лед из трех ягод",
-        "Вишневая кола",
-        "Тропическая радуга",
-        "Клубника киви",
-        "Клубника ананас кокос",
-        "Клубника бананы",
-        "Клубника мята персик",
-        "Мятный лед",
-        "Рэд Булл",
-        "Мексиканский манговый лед",
-        "Лед из трех ягод",
-        "Черника малина",
-        "Виноградный лед",
-        "Клубничный лед",
-        "Ананасовый лед",
-        "Арбузная мята",
-        "Розовый лимон",
-        "Голубая малина",
-        "Ананас кокос",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/ZKKm525y/5440618924673274836.jpg",
-      "popular": false
-    },
-    {
-      "id": 23,
-      "name": "GEEK BAR 18000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 410,
-        "10000-30000": 400,
-        "30000-50000": 395,
-        "50000-100000": 390,
-        "100000-999999": 380
-      },
-      "flavors": [
-        "Арбуз-холодок",
-        "Черника-холодок",
-        "Сочный персик-холодок",
-        "Тройная дыня-холодок",
-        "Кислое яблоко-холодок",
-        "Виноград-холодок",
-        "Клюква-холодок",
-        "Клубника-арбуз-холодок",
-        "Клубника-банан",
-        "Манго-персик-арбуз",
-        "Микс ягод-холодок",
-        "Виноград-малина-холодок",
-        "Киви-маракуйя",
-        "Вишня-лимон-персик",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/HxHKP8JD/5440618924673274838.jpg",
-      "popular": false
-    },
-    {
-      "id": 24,
+      "id": 14,
       "name": "HQD ULTIMA 10000",
       "description": "",
       "category": "Электронки",
@@ -897,7 +564,7 @@
       "popular": false
     },
     {
-      "id": 25,
+      "id": 15,
       "name": "HQD 20000",
       "description": "",
       "category": "Электронки",
@@ -950,16 +617,16 @@
       "popular": false
     },
     {
-      "id": 26,
+      "id": 16,
       "name": "PUFFMI MOSH 40000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 950,
-        "10000-30000": 940,
-        "30000-50000": 935,
-        "50000-100000": 930,
-        "100000-999999": 920
+        "3000-10000": 930,
+        "10000-30000": 920,
+        "30000-50000": 910,
+        "50000-100000": 900,
+        "100000-999999": 890
       },
       "flavors": [
         "Апельсин киви",
@@ -986,16 +653,16 @@
       "popular": false
     },
     {
-      "id": 27,
+      "id": 17,
       "name": "PUFF MI DURA 9000 PLUS",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 840,
-        "10000-30000": 830,
-        "30000-50000": 825,
-        "50000-100000": 820,
-        "100000-999999": 810
+        "3000-10000": 820,
+        "10000-30000": 810,
+        "30000-50000": 800,
+        "50000-100000": 790,
+        "100000-999999": 780
       },
       "flavors": [
         "Ананас киви",
@@ -1023,16 +690,16 @@
       "popular": false
     },
     {
-      "id": 28,
+      "id": 18,
       "name": "PUFF MI V2 9000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 820,
-        "10000-30000": 815,
-        "30000-50000": 810,
-        "50000-100000": 800,
-        "100000-999999": 790
+        "3000-10000": 810,
+        "10000-30000": 800,
+        "30000-50000": 790,
+        "50000-100000": 780,
+        "100000-999999": 770
       },
       "flavors": [
         "Grape Honeydew melon",
@@ -1065,7 +732,7 @@
       "popular": false
     },
     {
-      "id": 29,
+      "id": 19,
       "name": "PUFF MI PURE 12000",
       "description": "",
       "category": "Электронки",
@@ -1107,7 +774,7 @@
       "popular": false
     },
     {
-      "id": 30,
+      "id": 20,
       "name": "PUFF MI TUNK 16000",
       "description": "",
       "category": "Электронки",
@@ -1149,7 +816,7 @@
       "popular": false
     },
     {
-      "id": 31,
+      "id": 21,
       "name": "PUFF MI ROCK 12000",
       "description": "",
       "category": "Электронки",
@@ -1191,16 +858,16 @@
       "popular": false
     },
     {
-      "id": 32,
+      "id": 22,
       "name": "PUFF MI FLORA 25000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 920,
-        "10000-30000": 910,
-        "30000-50000": 900,
-        "50000-100000": 890,
-        "100000-999999": 880
+        "3000-10000": 870,
+        "10000-30000": 860,
+        "30000-50000": 850,
+        "50000-100000": 840,
+        "100000-999999": 830
       },
       "flavors": [
         "Ананасовый лимонад",
@@ -1235,7 +902,7 @@
       "popular": false
     },
     {
-      "id": 33,
+      "id": 23,
       "name": "UDN S25000",
       "description": "",
       "category": "Электронки",
@@ -1277,7 +944,7 @@
       "popular": false
     },
     {
-      "id": 34,
+      "id": 24,
       "name": "UDN SR 20000",
       "description": "",
       "category": "Электронки",
@@ -1319,16 +986,16 @@
       "popular": false
     },
     {
-      "id": 35,
+      "id": 25,
       "name": "ELF BAR TRIPLEX 30000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 820,
-        "10000-30000": 815,
-        "30000-50000": 810,
-        "50000-100000": 800,
-        "100000-999999": 790
+        "3000-10000": 770,
+        "10000-30000": 760,
+        "30000-50000": 750,
+        "50000-100000": 740,
+        "100000-999999": 730
       },
       "flavors": [
         "Виноград клюква",
@@ -1351,7 +1018,7 @@
       "popular": false
     },
     {
-      "id": 36,
+      "id": 26,
       "name": "ELF BAR MOONLIGHT 25000",
       "description": "",
       "category": "Электронки",
@@ -1387,7 +1054,7 @@
       "popular": false
     },
     {
-      "id": 37,
+      "id": 27,
       "name": "ELF BAR FS 18000",
       "description": "",
       "category": "Электронки",
@@ -1421,11 +1088,11 @@
       "resistances": null,
       "sale": false,
       "salePrice": null,
-      "photo": "https://i.postimg.cc/6q33dScP/5426927891783554493.jpg",
+      "photo": "https://i.postimg.cc/nhWTR54b/5215269695823485428.jpg",
       "popular": false
     },
     {
-      "id": 38,
+      "id": 28,
       "name": "ELF BAR BC 18000",
       "description": "",
       "category": "Электронки",
@@ -1459,7 +1126,7 @@
       "popular": false
     },
     {
-      "id": 39,
+      "id": 29,
       "name": "ELF BAR TOUCH 20000",
       "description": "",
       "category": "Электронки",
@@ -1496,7 +1163,7 @@
       "popular": false
     },
     {
-      "id": 40,
+      "id": 30,
       "name": "ELF BAR 20000",
       "description": "",
       "category": "Электронки",
@@ -1536,7 +1203,7 @@
       "popular": false
     },
     {
-      "id": 41,
+      "id": 31,
       "name": "ELF BAR 23000 РУС",
       "description": "",
       "category": "Электронки",
@@ -1558,45 +1225,7 @@
       "popular": false
     },
     {
-      "id": 42,
-      "name": "ELF BAR RAYA D3 25000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 830,
-        "10000-30000": 820,
-        "30000-50000": 800,
-        "50000-100000": 790,
-        "100000-999999": 780
-      },
-      "flavors": [
-        "Grape cherry",
-        "Mango",
-        "Watermelon bubble gum",
-        "Peach ice",
-        "Vmt",
-        "Blueberry raspberry",
-        "Kiwi passion fruit guava",
-        "Mango peach watermelon",
-        "Watermelon lemon",
-        "Peach berry",
-        "Strawberry grape",
-        "Double mango",
-        "Blueberry ice",
-        "Kiwi pineapple ice",
-        "Grape ice",
-        "Watermelon ice",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/Y0kPZKZD/5426927891783554500.jpg",
-      "popular": false
-    },
-    {
-      "id": 43,
+      "id": 32,
       "name": "ELF BAR NIC KING 30000",
       "description": "",
       "category": "Электронки",
@@ -1638,16 +1267,16 @@
       "popular": false
     },
     {
-      "id": 44,
+      "id": 33,
       "name": "ELF BAR ICE KING 30000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 755,
-        "10000-30000": 745,
-        "30000-50000": 735,
-        "50000-100000": 725,
-        "100000-999999": 715
+        "3000-10000": 740,
+        "10000-30000": 730,
+        "30000-50000": 720,
+        "50000-100000": 710,
+        "100000-999999": 700
       },
       "flavors": [
         "Ribena Lychee",
@@ -1674,53 +1303,16 @@
       "popular": false
     },
     {
-      "id": 45,
-      "name": "ELF BAR BC 30000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 690,
-        "10000-30000": 680,
-        "30000-50000": 670,
-        "50000-100000": 660,
-        "100000-999999": 650
-      },
-      "flavors": [
-        "Лимон лайм",
-        "Грейпфрут зеленый чай",
-        "Клубника грейпфрут",
-        "Гранатовый всплеск",
-        "Ежевичный лимонад",
-        "Черная смородина виноград",
-        "Черника малина лед",
-        "Киви ананас персик",
-        "Двойная мята",
-        "Грушевый лимонад",
-        "Гранат малина лайм",
-        "Малина клубника",
-        "Кислое яблоко киви",
-        "Ледяной арбуз",
-        "Лимонад вишня персик",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/MK60LK3H/5426927891783554487.jpg",
-      "popular": false
-    },
-    {
-      "id": 46,
+      "id": 34,
       "name": "ELF BAR GH 33000 PRO",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 835,
-        "10000-30000": 825,
-        "30000-50000": 815,
-        "50000-100000": 805,
-        "100000-999999": 795
+        "3000-10000": 820,
+        "10000-30000": 810,
+        "30000-50000": 800,
+        "50000-100000": 790,
+        "100000-999999": 780
       },
       "flavors": [
         "Грейпфрут маракуйя гуава",
@@ -1748,44 +1340,7 @@
       "popular": false
     },
     {
-      "id": 47,
-      "name": "CHILLAX SHAKE 25000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 355,
-        "10000-30000": 345,
-        "30000-50000": 340,
-        "50000-100000": 335,
-        "100000-999999": 325
-      },
-      "flavors": [
-        "Виноград яблоко",
-        "Тамаринд",
-        "Мармеладные мишки",
-        "Ванильное мороженое",
-        "Ледяной банан",
-        "Ледяной арбуз",
-        "Черная смородина",
-        "Арбуз личи",
-        "Клубника арбуз",
-        "Мятное море",
-        "Ледяная дыня",
-        "Спелая дыня",
-        "Ледяной матча",
-        "Манго",
-        "Клубника черная смородина",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/MTFLZPPx/5440618924673274848.jpg",
-      "popular": false
-    },
-    {
-      "id": 48,
+      "id": 35,
       "name": "LOST MARY BM 16000",
       "description": "",
       "category": "Электронки",
@@ -1827,7 +1382,7 @@
       "popular": false
     },
     {
-      "id": 49,
+      "id": 36,
       "name": "LOST MARY OS 12000",
       "description": "",
       "category": "Электронки",
@@ -1864,7 +1419,7 @@
       "popular": false
     },
     {
-      "id": 50,
+      "id": 37,
       "name": "LOST MARY X LINK POD 20000",
       "description": "",
       "category": "Электронки",
@@ -1892,11 +1447,11 @@
       "resistances": null,
       "sale": false,
       "salePrice": null,
-      "photo": "https://i.postimg.cc/43gpzf9M/5426927891783554509.jpg",
+      "photo": "https://i.postimg.cc/5tC8zHyS/5426927891783554489.jpg",
       "popular": false
     },
     {
-      "id": 51,
+      "id": 38,
       "name": "LOST MARY X LINK KART 20000",
       "description": "",
       "category": "Электронки",
@@ -1924,11 +1479,11 @@
       "resistances": null,
       "sale": false,
       "salePrice": null,
-      "photo": "https://i.postimg.cc/5tC8zHyS/5426927891783554489.jpg",
+      "photo": "https://i.postimg.cc/2jXYwj1G/5352910658787287302.jpg",
       "popular": false
     },
     {
-      "id": 52,
+      "id": 39,
       "name": "LOST MARY PUFFBALL 30000",
       "description": "",
       "category": "Электронки",
@@ -1970,7 +1525,7 @@
       "popular": false
     },
     {
-      "id": 53,
+      "id": 40,
       "name": "LOST MARY MIXER MO 20000 PRO",
       "description": "",
       "category": "Электронки",
@@ -2012,16 +1567,16 @@
       "popular": false
     },
     {
-      "id": 54,
+      "id": 41,
       "name": "LOST MARY MO 30000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 860,
-        "10000-30000": 855,
-        "30000-50000": 850,
-        "50000-100000": 840,
-        "100000-999999": 830
+        "3000-10000": 800,
+        "10000-30000": 790,
+        "30000-50000": 780,
+        "50000-100000": 770,
+        "100000-999999": 760
       },
       "flavors": [
         "Клубника киви",
@@ -2049,16 +1604,16 @@
       "popular": false
     },
     {
-      "id": 55,
+      "id": 42,
       "name": "LOST MARY MIXER + 25000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 800,
-        "10000-30000": 790,
-        "30000-50000": 780,
-        "50000-100000": 770,
-        "100000-999999": 760
+        "3000-10000": 760,
+        "10000-30000": 750,
+        "30000-50000": 740,
+        "50000-100000": 730,
+        "100000-999999": 720
       },
       "flavors": [
         "Апельсин клубника",
@@ -2081,7 +1636,7 @@
       "popular": false
     },
     {
-      "id": 56,
+      "id": 43,
       "name": "VOZOL STAR 46000",
       "description": "",
       "category": "Электронки",
@@ -2126,7 +1681,7 @@
       "popular": false
     },
     {
-      "id": 57,
+      "id": 44,
       "name": "VOZOL RAVE 40000",
       "description": "",
       "category": "Электронки",
@@ -2168,7 +1723,7 @@
       "popular": false
     },
     {
-      "id": 58,
+      "id": 45,
       "name": "VOZOL RAVE 46000 РУС",
       "description": "",
       "category": "Электронки",
@@ -2210,7 +1765,7 @@
       "popular": false
     },
     {
-      "id": 59,
+      "id": 46,
       "name": "VOZOL GEAR 20000 РУС",
       "description": "",
       "category": "Электронки",
@@ -2252,7 +1807,7 @@
       "popular": false
     },
     {
-      "id": 60,
+      "id": 47,
       "name": "VOZOL VISTA 20000",
       "description": "",
       "category": "Электронки",
@@ -2294,49 +1849,7 @@
       "popular": false
     },
     {
-      "id": 61,
-      "name": "VOZOL GEAR 25000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 660,
-        "10000-30000": 655,
-        "30000-50000": 650,
-        "50000-100000": 640,
-        "100000-999999": 630
-      },
-      "flavors": [
-        "Двойное яблоко",
-        "Дыня Ягоды мята",
-        "Манго со льдом",
-        "Черника",
-        "Манго персик",
-        "Вишня",
-        "Ягоды",
-        "Черная смородина",
-        "Сладкая Маракуйя",
-        "Клубника Киви со Льдом",
-        "Арбуз со льдом",
-        "Голубика со Льдом",
-        "Виноград",
-        "Клубничная Маргарита",
-        "Цитрон",
-        "Маракуйя Личи Лайм",
-        "Питахайя Банан Вишня",
-        "Клубника Киви",
-        "Черника Арбуз",
-        "Вишня Кола",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/c4k3578k/5426927891783554490.jpg",
-      "popular": false
-    },
-    {
-      "id": 62,
+      "id": 48,
       "name": "GANG ARCTIC 20000",
       "description": "",
       "category": "Электронки",
@@ -2373,29 +1886,7 @@
       "popular": false
     },
     {
-      "id": 63,
-      "name": "WAKA 35000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 720,
-        "10000-30000": 710,
-        "30000-50000": 700,
-        "50000-100000": 690,
-        "100000-999999": 680
-      },
-      "flavors": [
-        "Уточнять у менеджера"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/vBKQRv5W/5440618924673274855.jpg",
-      "popular": false
-    },
-    {
-      "id": 64,
+      "id": 49,
       "name": "WAKA XLAND 15000",
       "description": "",
       "category": "Электронки",
@@ -2432,7 +1923,7 @@
       "popular": false
     },
     {
-      "id": 65,
+      "id": 50,
       "name": "WAKA 20000",
       "description": "",
       "category": "Электронки",
@@ -2470,7 +1961,7 @@
       "popular": false
     },
     {
-      "id": 66,
+      "id": 51,
       "name": "WAKA 8000",
       "description": "",
       "category": "Электронки",
@@ -2492,29 +1983,7 @@
       "popular": false
     },
     {
-      "id": 67,
-      "name": "WAKA LIGHT 25000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 800,
-        "10000-30000": 790,
-        "30000-50000": 780,
-        "50000-100000": 770,
-        "100000-999999": 760
-      },
-      "flavors": [
-        "Уточнять у менеджера"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/1zkYhvmn/5426927891783554287-(1).jpg",
-      "popular": false
-    },
-    {
-      "id": 68,
+      "id": 52,
       "name": "WAKA 38000",
       "description": "",
       "category": "Электронки",
@@ -2536,29 +2005,7 @@
       "popular": false
     },
     {
-      "id": 69,
-      "name": "WAKA 60000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 1100,
-        "10000-30000": 1090,
-        "30000-50000": 1080,
-        "50000-100000": 1070,
-        "100000-999999": 1060
-      },
-      "flavors": [
-        "Уточнять у менеджера"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/xT6xTfjS/5426927891783554292-(1).jpg",
-      "popular": false
-    },
-    {
-      "id": 70,
+      "id": 53,
       "name": "XLAND SPIKE 35000",
       "description": "",
       "category": "Электронки",
@@ -2599,7 +2046,7 @@
       "popular": false
     },
     {
-      "id": 71,
+      "id": 54,
       "name": "ЗЛАЯ МОНАШКА SWEET 8% 30ML",
       "description": "",
       "category": "Жидкости",
@@ -2641,7 +2088,7 @@
       "popular": false
     },
     {
-      "id": 72,
+      "id": 55,
       "name": "ЗЛАЯ МИЛФА 7% 30ML",
       "description": "",
       "category": "Жидкости",
@@ -2662,7 +2109,7 @@
       "popular": false
     },
     {
-      "id": 73,
+      "id": 56,
       "name": "ЗЛАЯ МИЛФА 7% ACID 30ML",
       "description": "",
       "category": "Жидкости",
@@ -2683,29 +2130,7 @@
       "popular": false
     },
     {
-      "id": 74,
-      "name": "TOYZ&ANNIMA LOVE 50MG 30ML",
-      "description": "",
-      "category": "Жидкости",
-      "priceRanges": {
-        "3000-10000": 310,
-        "10000-30000": 300,
-        "30000-50000": 295,
-        "50000-100000": 290,
-        "100000-999999": 280
-      },
-      "flavors": [
-        "Уточнять у менеджера"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/5tw7W9vp/5355224392029377864.jpg",
-      "popular": false
-    },
-    {
-      "id": 75,
+      "id": 57,
       "name": "LOST MARY 50MG 30ML",
       "description": "",
       "category": "Жидкости",
@@ -2751,7 +2176,7 @@
       "popular": false
     },
     {
-      "id": 76,
+      "id": 58,
       "name": "CAMEL 50MG 30ML",
       "description": "",
       "category": "Жидкости",
@@ -2788,34 +2213,7 @@
       "popular": false
     },
     {
-      "id": 77,
-      "name": "LITENERGY 50MG 30ML",
-      "description": "",
-      "category": "Жидкости",
-      "priceRanges": {
-        "3000-10000": 260,
-        "10000-30000": 255,
-        "30000-50000": 250,
-        "50000-100000": 240,
-        "100000-999999": 235
-      },
-      "flavors": [
-        "Classic",
-        "Berry coconut",
-        "Blueberry",
-        "Mango coconut",
-        "Original",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/MHqjkv9k/5426927891783554458.jpg",
-      "popular": false
-    },
-    {
-      "id": 78,
+      "id": 59,
       "name": "OGGO 50MG 30ML",
       "description": "",
       "category": "Жидкости",
@@ -2864,7 +2262,7 @@
       "popular": false
     },
     {
-      "id": 79,
+      "id": 60,
       "name": "VOZOL SALT 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -2906,7 +2304,7 @@
       "popular": false
     },
     {
-      "id": 80,
+      "id": 61,
       "name": "ANNIMA LOVE 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -2946,7 +2344,7 @@
       "popular": false
     },
     {
-      "id": 81,
+      "id": 62,
       "name": "FUMO AQUA 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -2983,7 +2381,7 @@
       "popular": false
     },
     {
-      "id": 82,
+      "id": 63,
       "name": "HQD 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -3038,7 +2436,7 @@
       "popular": false
     },
     {
-      "id": 83,
+      "id": 64,
       "name": "RICK AND MORTY&ZEF TRIP ACID 30ML 20MG ",
       "description": "",
       "category": "Жидкости",
@@ -3075,7 +2473,7 @@
       "popular": false
     },
     {
-      "id": 84,
+      "id": 65,
       "name": "BRYZGI 30ML 50MG/20MG",
       "description": "",
       "category": "Жидкости",
@@ -3158,7 +2556,7 @@
       "popular": false
     },
     {
-      "id": 85,
+      "id": 66,
       "name": "CHAPMAN 30ML 20MG/50MG ",
       "description": "",
       "category": "Жидкости",
@@ -3191,7 +2589,7 @@
       "popular": false
     },
     {
-      "id": 86,
+      "id": 67,
       "name": "CATSWILL ACID 30ML/50MG",
       "description": "",
       "category": "Жидкости",
@@ -3228,7 +2626,7 @@
       "popular": false
     },
     {
-      "id": 87,
+      "id": 68,
       "name": "MONSTERVAPOR 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -3276,7 +2674,7 @@
       "popular": false
     },
     {
-      "id": 88,
+      "id": 69,
       "name": "SKALA 30ML 20MG",
       "description": "",
       "category": "Жидкости",
@@ -3321,7 +2719,7 @@
       "popular": false
     },
     {
-      "id": 89,
+      "id": 70,
       "name": "SKALA 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -3372,7 +2770,7 @@
       "popular": false
     },
     {
-      "id": 90,
+      "id": 71,
       "name": "ANGRY VAPE 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -3419,54 +2817,7 @@
       "popular": false
     },
     {
-      "id": 91,
-      "name": "DABBLER 30ML 50MG",
-      "description": "",
-      "category": "Жидкости",
-      "priceRanges": {
-        "3000-10000": 260,
-        "10000-30000": 250,
-        "30000-50000": 245,
-        "50000-100000": 240,
-        "100000-999999": 230
-      },
-      "flavors": [
-        "Черника со сливками",
-        "Черный виноград",
-        "Ягодные леденцы",
-        "Виноградная газировка",
-        "Персик с малиной",
-        "Кислые конфеты",
-        "Яблоко с манго и ананасом",
-        "Чизкейк с клубникой и бананом",
-        "Грейпфрут с малиной",
-        "Манго",
-        "Мятная жвачка",
-        "Клубника",
-        "Киви",
-        "Йогурт манго-маракуйя",
-        "Апельсиновая газировка",
-        "Ананасовая газировка",
-        "Яблоко",
-        "Арбузная жвачка",
-        "Гранатовый сок",
-        "Малиновая газировка",
-        "Лимонный мармелад",
-        "Малиновый джем",
-        "Йогурт с киви",
-        "Банан",
-        "Зеленое яблоко с вишней",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/qMqhntZ7/5426927891783554491.jpg",
-      "popular": false
-    },
-    {
-      "id": 92,
+      "id": 72,
       "name": "АНАРХИЯ V2 30ML 60MG HARD",
       "description": "",
       "category": "Жидкости",
@@ -3508,7 +2859,7 @@
       "popular": false
     },
     {
-      "id": 93,
+      "id": 73,
       "name": "АНАРХИЯ 30ML 60MG",
       "description": "",
       "category": "Жидкости",
@@ -3550,7 +2901,7 @@
       "popular": false
     },
     {
-      "id": 94,
+      "id": 74,
       "name": "PUFF MI 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -3591,7 +2942,7 @@
       "popular": false
     },
     {
-      "id": 95,
+      "id": 75,
       "name": "PODONKI MALASIAN 30ML 20MG",
       "description": "",
       "category": "Жидкости",
@@ -3632,7 +2983,7 @@
       "popular": false
     },
     {
-      "id": 96,
+      "id": 76,
       "name": "PODONKI CRYSTAL 30ML 60MG",
       "description": "",
       "category": "Жидкости",
@@ -3669,7 +3020,7 @@
       "popular": false
     },
     {
-      "id": 97,
+      "id": 77,
       "name": "PODONKI LIGHT 30ML 20MG",
       "description": "",
       "category": "Жидкости",
@@ -3706,7 +3057,7 @@
       "popular": false
     },
     {
-      "id": 98,
+      "id": 78,
       "name": "PODONKI PODGON 30ML 60MG",
       "description": "",
       "category": "Жидкости",
@@ -3743,7 +3094,7 @@
       "popular": false
     },
     {
-      "id": 99,
+      "id": 79,
       "name": "PODONKI & ISTERICA 30ML 60MG",
       "description": "",
       "category": "Жидкости",
@@ -3780,7 +3131,7 @@
       "popular": false
     },
     {
-      "id": 100,
+      "id": 80,
       "name": "MALASYAN & PODONKI V2 30ML 60MG",
       "description": "",
       "category": "Жидкости",
@@ -3812,7 +3163,7 @@
       "popular": false
     },
     {
-      "id": 101,
+      "id": 81,
       "name": "MALASYAN & PODONKI 30ML 60MG",
       "description": "",
       "category": "Жидкости",
@@ -3844,7 +3195,7 @@
       "popular": false
     },
     {
-      "id": 102,
+      "id": 82,
       "name": "PODONKI V1 V2 30ML 60MG ",
       "description": "",
       "category": "Жидкости",
@@ -3890,7 +3241,7 @@
       "popular": false
     },
     {
-      "id": 103,
+      "id": 83,
       "name": "PODONKI & ALFAVAPE 30ML 50MG ",
       "description": "",
       "category": "Жидкости",
@@ -3942,7 +3293,7 @@
       "popular": false
     },
     {
-      "id": 104,
+      "id": 84,
       "name": "HOT SPOT & PODONKI 30ML 60MG",
       "description": "",
       "category": "Жидкости",
@@ -3979,7 +3330,7 @@
       "popular": false
     },
     {
-      "id": 105,
+      "id": 85,
       "name": "PODONKI LAST HAP 30ML 50MG ",
       "description": "",
       "category": "Жидкости",
@@ -4001,7 +3352,7 @@
       "popular": false
     },
     {
-      "id": 106,
+      "id": 86,
       "name": "HOT SPOT DOT 30ML 50MG\\HYBRYD\\20MG",
       "description": "",
       "category": "Жидкости",
@@ -4029,7 +3380,7 @@
       "popular": false
     },
     {
-      "id": 107,
+      "id": 87,
       "name": "HOT SPOT ICE 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -4061,7 +3412,7 @@
       "popular": false
     },
     {
-      "id": 108,
+      "id": 88,
       "name": "HOT SPOT FUEL UP 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -4093,7 +3444,7 @@
       "popular": false
     },
     {
-      "id": 109,
+      "id": 89,
       "name": "HOT SPOT FUEL 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -4129,7 +3480,7 @@
       "popular": false
     },
     {
-      "id": 110,
+      "id": 90,
       "name": "DUAL EXTREME 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -4181,7 +3532,7 @@
       "popular": false
     },
     {
-      "id": 111,
+      "id": 91,
       "name": "ИНДИВИDUALL 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -4221,7 +3572,7 @@
       "popular": false
     },
     {
-      "id": 112,
+      "id": 92,
       "name": "DUAL HARD 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -4303,7 +3654,7 @@
       "popular": false
     },
     {
-      "id": 113,
+      "id": 93,
       "name": "DUAL EXTRA 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -4357,7 +3708,7 @@
       "popular": false
     },
     {
-      "id": 114,
+      "id": 94,
       "name": "NARCOZ 30ML 20MG STRONG",
       "description": "",
       "category": "Жидкости",
@@ -4394,7 +3745,7 @@
       "popular": false
     },
     {
-      "id": 115,
+      "id": 95,
       "name": "NARCOZ 30ML 20MG",
       "description": "",
       "category": "Жидкости",
@@ -4427,197 +3778,7 @@
       "popular": false
     },
     {
-      "id": 116,
-      "name": "РИК И МОРТИ НА ЗАМЕРЗОНЕ КИСЛЫЕ 30ML 50MG",
-      "description": "",
-      "category": "Жидкости",
-      "priceRanges": {
-        "3000-10000": 280,
-        "10000-30000": 270,
-        "30000-50000": 265,
-        "50000-100000": 260,
-        "100000-999999": 255
-      },
-      "flavors": [
-        "Ананас",
-        "Ананас Манго",
-        "Арбуз Клубника",
-        "Арбуз Клюква",
-        "Арбузные Леденцы",
-        "Виноград Малина",
-        "Виноградный Мармелад",
-        "Вишня Малина Апельсин",
-        "Клубника",
-        "Клубника Ежевика",
-        "Клубника Киви",
-        "Клубника Малина",
-        "Клубничный Драгонфрут",
-        "Лимон Лайм",
-        "Лимонад Ежевика Малина",
-        "Спелый Гранат",
-        "Фруктовый Скиттлс",
-        "Черника Голубая Малина",
-        "Яблоко",
-        "Ягодный Взрыв",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/KzBqPPmh/5440618924673274990.jpg",
-      "popular": false
-    },
-    {
-      "id": 117,
-      "name": "РИК И МОРТИ НА ЗАМЕРЗОНЕ 30ML 20MG",
-      "description": "",
-      "category": "Жидкости",
-      "priceRanges": {
-        "3000-10000": 280,
-        "10000-30000": 270,
-        "30000-50000": 265,
-        "50000-100000": 260,
-        "100000-999999": 255
-      },
-      "flavors": [
-        "алоэ зип",
-        "киви рик",
-        "клубничный глунч",
-        "клубничный ну б ну б",
-        "клюква концерто",
-        "кокосовый блим блам",
-        "кола скропон",
-        "малиновый бибо",
-        "манго армагедон",
-        "ананасовый флиппи",
-        "маракуйя калипсо",
-        "мармеладный глип глоп",
-        "молочный самер",
-        "персиковый диабло",
-        "смородина жираф",
-        "черничный небулон",
-        "ягодный балтромав",
-        "ягодный глаути",
-        "апельсиновый кровоточк",
-        "холс девин",
-        "манговый элай",
-        "кислая ананасовая дайен",
-        "кислый швепс сонный гери",
-        "спрайт бэт",
-        "дынный джерри",
-        "клубничный блум",
-        "пинаколада сквончи",
-        "тропическая птичья личность",
-        "арбузная поньета",
-        "розовый гарольд",
-        "клюквенный голденфолд",
-        "кислый ски́тлс ренегад",
-        "лесной корнвелиус",
-        "земляничный шестеренкоголовый",
-        "кислый черничный шлимпанст",
-        "киви люциус",
-        "кислая вишневая киара",
-        "клубничная джессика",
-        "жвачка саммер",
-        "арбузный дриппи",
-        "лимонная супернова",
-        "мятный гарбловианец",
-        "арбузный терри",
-        "кислый лаймовый пончо",
-        "барбарисовая артритция",
-        "яблочный президент",
-        "грейпфрутовый рубен",
-        "морс юнити",
-        "банановый фрундель",
-        "бузина бет",
-        "виноградный миссикс",
-        "гранатовый мортӣ",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/VkZVms7S/5440618924673274991.jpg",
-      "popular": false
-    },
-    {
-      "id": 118,
-      "name": "РИК И МОРТИ НА ЗАМЕРЗОНЕ 30ML 50MG",
-      "description": "",
-      "category": "Жидкости",
-      "priceRanges": {
-        "3000-10000": 285,
-        "10000-30000": 275,
-        "30000-50000": 270,
-        "50000-100000": 265,
-        "100000-999999": 260
-      },
-      "flavors": [
-        "алоэ зип",
-        "киви рик",
-        "клубничный глунч",
-        "клубничный ну б ну б",
-        "клюква концерто",
-        "кокосовый блим блам",
-        "кола скропон",
-        "малиновый бибо",
-        "манго армагедон",
-        "ананасовый флиппи",
-        "маракуйя калипсо",
-        "мармеладный глип глоп",
-        "молочный самер",
-        "персиковый диабло",
-        "смородина жираф",
-        "черничный небулон",
-        "ягодный балтромав",
-        "ягодный глаути",
-        "апельсиновый кровоточк",
-        "холс девин",
-        "манговый элай",
-        "кислая ананасовая дайен",
-        "кислый швепс сонный гери",
-        "спрайт бэт",
-        "дынный джерри",
-        "клубничный блум",
-        "пинаколада сквончи",
-        "тропическая птичья личность",
-        "арбузная поньета",
-        "розовый гарольд",
-        "клюквенный голденфолд",
-        "кислый ски́тлс ренегад",
-        "лесной корнвелиус",
-        "земляничный шестеренкоголовый",
-        "кислый черничный шлимпанст",
-        "киви люциус",
-        "кислая вишневая киара",
-        "клубничная джессика",
-        "жвачка саммер",
-        "арбузный дриппи",
-        "лимонная супернова",
-        "мятный гарбловианец",
-        "арбузный терри",
-        "кислый лаймовый пончо",
-        "барбарисовая артритция",
-        "яблочный президент",
-        "грейпфрутовый рубен",
-        "морс юнити",
-        "банановый фрундель",
-        "бузина бет",
-        "виноградный миссикс",
-        "гранатовый мортӣ",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/VkZVms7S/5440618924673274991.jpg",
-      "popular": false
-    },
-    {
-      "id": 119,
+      "id": 96,
       "name": "TRAVA 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -4661,7 +3822,7 @@
       "popular": false
     },
     {
-      "id": 120,
+      "id": 97,
       "name": "TRAVA 30ML 20MG",
       "description": "",
       "category": "Жидкости",
@@ -4705,7 +3866,7 @@
       "popular": false
     },
     {
-      "id": 121,
+      "id": 98,
       "name": "XULYHET MALASIAN 30ML|50MG",
       "description": "",
       "category": "Жидкости",
@@ -4737,7 +3898,7 @@
       "popular": false
     },
     {
-      "id": 122,
+      "id": 99,
       "name": "XULYNET 30ML|20MG/69MG",
       "description": "",
       "category": "Жидкости",
@@ -4775,7 +3936,7 @@
       "popular": false
     },
     {
-      "id": 123,
+      "id": 100,
       "name": "CHARON T50",
       "description": "",
       "category": "Под-системы",
@@ -4802,7 +3963,7 @@
       "popular": false
     },
     {
-      "id": 124,
+      "id": 101,
       "name": "CHARON BABY PLUS",
       "description": "",
       "category": "Под-системы",
@@ -4838,7 +3999,7 @@
       "popular": false
     },
     {
-      "id": 125,
+      "id": 102,
       "name": "CHARON BABY MISTERY BOX",
       "description": "",
       "category": "Под-системы",
@@ -4860,7 +4021,7 @@
       "popular": false
     },
     {
-      "id": 126,
+      "id": 103,
       "name": "KNIGHT AIO KIT",
       "description": "",
       "category": "Под-системы",
@@ -4889,16 +4050,16 @@
       "popular": false
     },
     {
-      "id": 127,
+      "id": 104,
       "name": "KNIGHT 80",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 2050,
-        "10000-30000": 2030,
-        "30000-50000": 2020,
-        "50000-100000": 2000,
-        "100000-999999": 1980
+        "3000-10000": 1950,
+        "10000-30000": 1920,
+        "30000-50000": 1900,
+        "50000-100000": 1880,
+        "100000-999999": 1850
       },
       "flavors": null,
       "colors": [
@@ -4916,7 +4077,7 @@
       "popular": false
     },
     {
-      "id": 128,
+      "id": 105,
       "name": "PASITO MINI",
       "description": "",
       "category": "Под-системы",
@@ -4946,7 +4107,7 @@
       "popular": false
     },
     {
-      "id": 129,
+      "id": 106,
       "name": "PASITO",
       "description": "",
       "category": "Под-системы",
@@ -4973,16 +4134,16 @@
       "popular": false
     },
     {
-      "id": 130,
+      "id": 107,
       "name": "PASITO 2",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 2240,
-        "10000-30000": 2220,
-        "30000-50000": 2200,
-        "50000-100000": 2180,
-        "100000-999999": 2160
+        "3000-10000": 1820,
+        "10000-30000": 1800,
+        "30000-50000": 1780,
+        "50000-100000": 1750,
+        "100000-999999": 1720
       },
       "flavors": null,
       "colors": [
@@ -5005,16 +4166,16 @@
       "popular": false
     },
     {
-      "id": 131,
+      "id": 108,
       "name": "PASITO 3",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 3000,
-        "10000-30000": 2980,
-        "30000-50000": 2960,
-        "50000-100000": 2940,
-        "100000-999999": 2920
+        "3000-10000": 2380,
+        "10000-30000": 2350,
+        "30000-50000": 2320,
+        "50000-100000": 2300,
+        "100000-999999": 2260
       },
       "flavors": null,
       "colors": [
@@ -5035,16 +4196,16 @@
       "popular": false
     },
     {
-      "id": 132,
+      "id": 109,
       "name": "Vaporesso XROS PRO",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 1610,
-        "10000-30000": 1590,
-        "30000-50000": 1580,
-        "50000-100000": 1560,
-        "100000-999999": 1540
+        "3000-10000": 1600,
+        "10000-30000": 1580,
+        "30000-50000": 1550,
+        "50000-100000": 1530,
+        "100000-999999": 1500
       },
       "flavors": null,
       "colors": [
@@ -5064,7 +4225,7 @@
       "popular": false
     },
     {
-      "id": 133,
+      "id": 110,
       "name": "VAPORESSO XROS 3 NANO",
       "description": "",
       "category": "Под-системы",
@@ -5100,16 +4261,16 @@
       "popular": false
     },
     {
-      "id": 134,
+      "id": 111,
       "name": "VAPORESSO XROS MINI",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
         "3000-10000": 800,
         "10000-30000": 780,
-        "30000-50000": 770,
-        "50000-100000": 750,
-        "100000-999999": 730
+        "30000-50000": 750,
+        "50000-100000": 730,
+        "100000-999999": 700
       },
       "flavors": null,
       "colors": [
@@ -5140,16 +4301,16 @@
       "popular": false
     },
     {
-      "id": 135,
+      "id": 112,
       "name": "VAPORESSO XROS 3 MINI",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 950,
-        "10000-30000": 930,
-        "30000-50000": 920,
-        "50000-100000": 900,
-        "100000-999999": 890
+        "3000-10000": 930,
+        "10000-30000": 900,
+        "30000-50000": 870,
+        "50000-100000": 840,
+        "100000-999999": 810
       },
       "flavors": null,
       "colors": [
@@ -5173,7 +4334,7 @@
       "popular": false
     },
     {
-      "id": 136,
+      "id": 113,
       "name": "VAPORESSO XROS 2",
       "description": "",
       "category": "Под-системы",
@@ -5205,16 +4366,16 @@
       "popular": false
     },
     {
-      "id": 137,
+      "id": 114,
       "name": "VAPORESSO XROS 3",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 1380,
-        "10000-30000": 1360,
-        "30000-50000": 1350,
-        "50000-100000": 1330,
-        "100000-999999": 1310
+        "3000-10000": 1370,
+        "10000-30000": 1340,
+        "30000-50000": 1310,
+        "50000-100000": 1280,
+        "100000-999999": 1250
       },
       "flavors": null,
       "colors": [
@@ -5238,16 +4399,16 @@
       "popular": false
     },
     {
-      "id": 138,
+      "id": 115,
       "name": "VAPORESSO XROS 4 MINI",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
         "3000-10000": 1050,
-        "10000-30000": 1030,
-        "30000-50000": 1020,
-        "50000-100000": 1000,
-        "100000-999999": 980
+        "10000-30000": 1020,
+        "30000-50000": 990,
+        "50000-100000": 960,
+        "100000-999999": 930
       },
       "flavors": null,
       "colors": [
@@ -5271,7 +4432,7 @@
       "popular": false
     },
     {
-      "id": 139,
+      "id": 116,
       "name": "VAPORESSO XROS 4 NANO",
       "description": "",
       "category": "Под-системы",
@@ -5301,16 +4462,16 @@
       "popular": false
     },
     {
-      "id": 140,
+      "id": 117,
       "name": "VAPORESSO XROS 5",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 1580,
-        "10000-30000": 1560,
-        "30000-50000": 1550,
-        "50000-100000": 1530,
-        "100000-999999": 1510
+        "3000-10000": 1560,
+        "10000-30000": 1520,
+        "30000-50000": 1480,
+        "50000-100000": 1450,
+        "100000-999999": 1420
       },
       "flavors": null,
       "colors": [
@@ -5333,16 +4494,16 @@
       "popular": false
     },
     {
-      "id": 141,
+      "id": 118,
       "name": "VAPORESSO XROS 5 MINI",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 1080,
-        "10000-30000": 1060,
-        "30000-50000": 1050,
-        "50000-100000": 1030,
-        "100000-999999": 1010
+        "3000-10000": 1070,
+        "10000-30000": 1040,
+        "30000-50000": 1010,
+        "50000-100000": 980,
+        "100000-999999": 950
       },
       "flavors": null,
       "colors": [
@@ -5365,16 +4526,16 @@
       "popular": false
     },
     {
-      "id": 142,
+      "id": 119,
       "name": "VAPORESSO XROS 4",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 1530,
-        "10000-30000": 1510,
-        "30000-50000": 1500,
-        "50000-100000": 1480,
-        "100000-999999": 1460
+        "3000-10000": 1490,
+        "10000-30000": 1460,
+        "30000-50000": 1430,
+        "50000-100000": 1400,
+        "100000-999999": 1370
       },
       "flavors": null,
       "colors": [
@@ -5398,7 +4559,7 @@
       "popular": false
     },
     {
-      "id": 143,
+      "id": 120,
       "name": "VAPORESSO LUXE Q",
       "description": "",
       "category": "Под-системы",
@@ -5430,16 +4591,16 @@
       "popular": false
     },
     {
-      "id": 144,
+      "id": 121,
       "name": "AEGIS HERO 5",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 2300,
-        "10000-30000": 2280,
-        "30000-50000": 2260,
-        "50000-100000": 2240,
-        "100000-999999": 2220
+        "3000-10000": 1880,
+        "10000-30000": 1850,
+        "30000-50000": 1820,
+        "50000-100000": 1800,
+        "100000-999999": 1770
       },
       "flavors": null,
       "colors": [
@@ -5460,7 +4621,7 @@
       "popular": false
     },
     {
-      "id": 145,
+      "id": 122,
       "name": "AEGIS HERO Q",
       "description": "",
       "category": "Под-системы",
@@ -5490,7 +4651,7 @@
       "popular": false
     },
     {
-      "id": 146,
+      "id": 123,
       "name": "GEEK VAPE B60",
       "description": "",
       "category": "Под-системы",
@@ -5520,7 +4681,7 @@
       "popular": false
     },
     {
-      "id": 147,
+      "id": 124,
       "name": "GEEK VAPE AN 2 KIT",
       "description": "",
       "category": "Под-системы",
@@ -5548,7 +4709,7 @@
       "popular": false
     },
     {
-      "id": 148,
+      "id": 125,
       "name": "AEGIS ONE",
       "description": "",
       "category": "Под-системы",
@@ -5575,7 +4736,7 @@
       "popular": false
     },
     {
-      "id": 149,
+      "id": 126,
       "name": "AEGIS HERO 2 CRYSTALL",
       "description": "",
       "category": "Под-системы",
@@ -5584,7 +4745,7 @@
         "10000-30000": 2030,
         "30000-50000": 2020,
         "50000-100000": 2000,
-        "100000-999999": 1980
+        "100000-999999": 1970
       },
       "flavors": null,
       "colors": [
@@ -5602,16 +4763,16 @@
       "popular": false
     },
     {
-      "id": 150,
+      "id": 127,
       "name": "AEGIS BOOST 3 KIT",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 2220,
-        "10000-30000": 2200,
-        "30000-50000": 2190,
-        "50000-100000": 2170,
-        "100000-999999": 2150
+        "3000-10000": 2080,
+        "10000-30000": 2050,
+        "30000-50000": 2020,
+        "50000-100000": 1990,
+        "100000-999999": 1960
       },
       "flavors": null,
       "colors": [
@@ -5632,16 +4793,16 @@
       "popular": false
     },
     {
-      "id": 151,
+      "id": 128,
       "name": "AEGIS HERO 2",
       "description": "",
       "category": "Под-системы",
       "priceRanges": {
-        "3000-10000": 2050,
-        "10000-30000": 2030,
-        "30000-50000": 2020,
-        "50000-100000": 2000,
-        "100000-999999": 1980
+        "3000-10000": 1880,
+        "10000-30000": 1850,
+        "30000-50000": 1820,
+        "50000-100000": 1800,
+        "100000-999999": 1770
       },
       "flavors": null,
       "colors": [
@@ -5662,7 +4823,7 @@
       "popular": false
     },
     {
-      "id": 152,
+      "id": 129,
       "name": "SMOK NOVO X",
       "description": "",
       "category": "Под-системы",
@@ -5692,7 +4853,7 @@
       "popular": false
     },
     {
-      "id": 153,
+      "id": 130,
       "name": "MANTO AIO PLUS",
       "description": "",
       "category": "Под-системы",
@@ -5722,7 +4883,7 @@
       "popular": false
     },
     {
-      "id": 154,
+      "id": 131,
       "name": "MANTO AIO PRO",
       "description": "",
       "category": "Под-системы",
@@ -5750,7 +4911,7 @@
       "popular": false
     },
     {
-      "id": 155,
+      "id": 132,
       "name": "JELLYBOX NANO 3",
       "description": "",
       "category": "Под-системы",
@@ -5777,7 +4938,7 @@
       "popular": false
     },
     {
-      "id": 156,
+      "id": 133,
       "name": "BRUSKO MINICAN 2",
       "description": "",
       "category": "Под-системы",
@@ -5810,7 +4971,7 @@
       "popular": false
     },
     {
-      "id": 157,
+      "id": 134,
       "name": "BRUSKO MINICAN 3",
       "description": "",
       "category": "Под-системы",
@@ -5843,7 +5004,7 @@
       "popular": false
     },
     {
-      "id": 158,
+      "id": 135,
       "name": "BRUSKO MINICAN 4",
       "description": "",
       "category": "Под-системы",
@@ -5876,7 +5037,7 @@
       "popular": false
     },
     {
-      "id": 159,
+      "id": 136,
       "name": "VOOPOO DRAG H40",
       "description": "",
       "category": "Под-системы",
@@ -5906,7 +5067,7 @@
       "popular": false
     },
     {
-      "id": 160,
+      "id": 137,
       "name": "VOOPOO DRAG E60",
       "description": "",
       "category": "Под-системы",
@@ -5934,7 +5095,7 @@
       "popular": false
     },
     {
-      "id": 161,
+      "id": 138,
       "name": "VOOPOO DRAG S2",
       "description": "",
       "category": "Под-системы",
@@ -5963,7 +5124,7 @@
       "popular": false
     },
     {
-      "id": 162,
+      "id": 139,
       "name": "VOOPOO VMATE E",
       "description": "",
       "category": "Под-системы",
@@ -5991,7 +5152,7 @@
       "popular": false
     },
     {
-      "id": 163,
+      "id": 140,
       "name": "VOOPOO VMATE MINI",
       "description": "",
       "category": "Под-системы",
@@ -6020,7 +5181,7 @@
       "popular": false
     },
     {
-      "id": 164,
+      "id": 141,
       "name": "VOOPOO VMATE PRO",
       "description": "",
       "category": "Под-системы",
@@ -6049,7 +5210,7 @@
       "popular": false
     },
     {
-      "id": 165,
+      "id": 142,
       "name": "LOST VAPE URSA NANO S",
       "description": "",
       "category": "Под-системы",
@@ -6080,7 +5241,7 @@
       "popular": false
     },
     {
-      "id": 166,
+      "id": 143,
       "name": "CHARON T50 1ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6100,7 +5261,7 @@
       "popular": false
     },
     {
-      "id": 167,
+      "id": 144,
       "name": "CHARON BABY 1ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6120,7 +5281,7 @@
       "popular": false
     },
     {
-      "id": 168,
+      "id": 145,
       "name": "CHARON BABY PLUS 1шт в упаковке",
       "description": "",
       "category": "Картриджи",
@@ -6140,7 +5301,7 @@
       "popular": false
     },
     {
-      "id": 169,
+      "id": 146,
       "name": "PASITO MINI 1ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6160,7 +5321,7 @@
       "popular": false
     },
     {
-      "id": 170,
+      "id": 147,
       "name": "PASITO 1 1шт в упаковке",
       "description": "",
       "category": "Картриджи",
@@ -6180,7 +5341,7 @@
       "popular": false
     },
     {
-      "id": 171,
+      "id": 148,
       "name": "SANTI 1ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6200,7 +5361,7 @@
       "popular": false
     },
     {
-      "id": 172,
+      "id": 149,
       "name": "Vaporesso ECO NANO 2ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6220,7 +5381,7 @@
       "popular": false
     },
     {
-      "id": 173,
+      "id": 150,
       "name": "VAPORESSO XROS 4ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6240,7 +5401,7 @@
       "popular": false
     },
     {
-      "id": 174,
+      "id": 151,
       "name": "VAPORESSO LUXE Q 4ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6260,7 +5421,7 @@
       "popular": false
     },
     {
-      "id": 175,
+      "id": 152,
       "name": "VOOPOO V.THRU PRO 2ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6280,7 +5441,7 @@
       "popular": false
     },
     {
-      "id": 176,
+      "id": 153,
       "name": "VOOPOO VINCI POD 3ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картриджи",
@@ -6300,7 +5461,7 @@
       "popular": false
     },
     {
-      "id": 177,
+      "id": 154,
       "name": "AEGIS BOOST LE 2ШТ КАРТРИДЖ",
       "description": "",
       "category": "Картриджи",
@@ -6320,7 +5481,7 @@
       "popular": false
     },
     {
-      "id": 178,
+      "id": 155,
       "name": "AEGIS NANO 2ШТ КАРТРИДЖ",
       "description": "",
       "category": "Картриджи",
@@ -6340,7 +5501,7 @@
       "popular": false
     },
     {
-      "id": 179,
+      "id": 156,
       "name": "AEGIS HERO 2 2ШТ КАРТРИДЖ\"",
       "description": "",
       "category": "Картриджи",
@@ -6360,7 +5521,7 @@
       "popular": false
     },
     {
-      "id": 180,
+      "id": 157,
       "name": "CHARON BABY 3шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6384,7 +5545,7 @@
       "popular": false
     },
     {
-      "id": 181,
+      "id": 158,
       "name": "SANTI & CHARON PLUS 3шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6409,7 +5570,7 @@
       "popular": false
     },
     {
-      "id": 182,
+      "id": 159,
       "name": "PASITO 1 3шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6432,7 +5593,7 @@
       "popular": false
     },
     {
-      "id": 183,
+      "id": 160,
       "name": "PASITO 2 & KNIGHT 80 3шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6457,7 +5618,7 @@
       "popular": false
     },
     {
-      "id": 184,
+      "id": 161,
       "name": "PASITO MINI 3шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6482,7 +5643,7 @@
       "popular": false
     },
     {
-      "id": 185,
+      "id": 162,
       "name": "MANTO AIO 3шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6506,7 +5667,7 @@
       "popular": false
     },
     {
-      "id": 186,
+      "id": 163,
       "name": "JELLY BOX NANO 3шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6530,7 +5691,7 @@
       "popular": false
     },
     {
-      "id": 187,
+      "id": 164,
       "name": "GEEKVAPE AEGIS B SERIES 5шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6558,7 +5719,7 @@
       "popular": false
     },
     {
-      "id": 188,
+      "id": 165,
       "name": "VOOPOO PNP X 5шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6580,7 +5741,7 @@
       "popular": false
     },
     {
-      "id": 189,
+      "id": 166,
       "name": "VOOPOO PNP TW 5шт в упаковке",
       "description": "",
       "category": "Испарители",
@@ -6605,360 +5766,8 @@
       "popular": false
     },
     {
-      "id": 190,
+      "id": 167,
       "name": "PEREDOZ 170MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 220,
-        "10000-30000": 215,
-        "30000-50000": 210,
-        "50000-100000": 205,
-        "100000-999999": 200
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 191,
-      "name": "MAD&RED LIMITED 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 265,
-        "10000-30000": 260,
-        "30000-50000": 255,
-        "50000-100000": 250,
-        "100000-999999": 240
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 192,
-      "name": "GANG 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 240,
-        "10000-30000": 235,
-        "30000-50000": 230,
-        "50000-100000": 225,
-        "100000-999999": 220
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 193,
-      "name": "KASTA ANIME 120MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 285,
-        "10000-30000": 280,
-        "30000-50000": 275,
-        "50000-100000": 270,
-        "100000-999999": 265
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 194,
-      "name": "KASTA COVID 120MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 285,
-        "10000-30000": 280,
-        "30000-50000": 275,
-        "50000-100000": 270,
-        "100000-999999": 265
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 195,
-      "name": "KASTA DOTA 120MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 285,
-        "10000-30000": 280,
-        "30000-50000": 275,
-        "50000-100000": 270,
-        "100000-999999": 265
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 196,
-      "name": "KASTA PHOBIA 125MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 285,
-        "10000-30000": 280,
-        "30000-50000": 275,
-        "50000-100000": 270,
-        "100000-999999": 265
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 197,
-      "name": "KASTA V2 105MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 285,
-        "10000-30000": 280,
-        "30000-50000": 275,
-        "50000-100000": 270,
-        "100000-999999": 265
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 198,
-      "name": "ARQA CS 120MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 270,
-        "10000-30000": 260,
-        "30000-50000": 255,
-        "50000-100000": 250,
-        "100000-999999": 240
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 199,
-      "name": "DRYMOST STORM 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 260,
-        "10000-30000": 255,
-        "30000-50000": 250,
-        "50000-100000": 245,
-        "100000-999999": 240
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 200,
-      "name": "DRYMOST ARMAGEDDON 200MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 265,
-        "10000-30000": 260,
-        "30000-50000": 255,
-        "50000-100000": 250,
-        "100000-999999": 245
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 201,
-      "name": "ISTERIKA&HOTSPOT 180MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 250,
-        "10000-30000": 245,
-        "30000-50000": 240,
-        "50000-100000": 235,
-        "100000-999999": 230
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 202,
-      "name": "ISTERIKA LETHAL X 205MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 260,
-        "10000-30000": 255,
-        "30000-50000": 250,
-        "50000-100000": 245,
-        "100000-999999": 240
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 203,
-      "name": "ISTERIKA LETHAL 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 250,
-        "10000-30000": 245,
-        "30000-50000": 240,
-        "50000-100000": 230,
-        "100000-999999": 225
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 204,
-      "name": "RED 170MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 210,
-        "10000-30000": 200,
-        "30000-50000": 195,
-        "50000-100000": 190,
-        "100000-999999": 185
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 205,
-      "name": "RED ICE COOL 65MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 200,
-        "10000-30000": 195,
-        "30000-50000": 190,
-        "50000-100000": 185,
-        "100000-999999": 180
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 206,
-      "name": "ЗЛАЯ МОНАШКА 120MG",
       "description": "",
       "category": "Снюс",
       "priceRanges": {
@@ -6979,13 +5788,607 @@
       "popular": false
     },
     {
-      "id": 207,
+      "id": 168,
+      "name": "MAD&RED LIMITED 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 310,
+        "10000-30000": 305,
+        "30000-50000": 300,
+        "50000-100000": 290,
+        "100000-999999": 280
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 169,
+      "name": "GANG 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 290,
+        "10000-30000": 285,
+        "30000-50000": 280,
+        "50000-100000": 270,
+        "100000-999999": 260
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 170,
+      "name": "KASTA ANIME 120MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 330,
+        "10000-30000": 325,
+        "30000-50000": 320,
+        "50000-100000": 310,
+        "100000-999999": 300
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 171,
+      "name": "KASTA COVID 120MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 330,
+        "10000-30000": 325,
+        "30000-50000": 320,
+        "50000-100000": 310,
+        "100000-999999": 300
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 172,
+      "name": "KASTA DOTA 120MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 330,
+        "10000-30000": 325,
+        "30000-50000": 320,
+        "50000-100000": 310,
+        "100000-999999": 300
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 173,
+      "name": "KASTA PHOBIA 125MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 330,
+        "10000-30000": 325,
+        "30000-50000": 320,
+        "50000-100000": 310,
+        "100000-999999": 300
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 174,
+      "name": "KASTA V2 105MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 330,
+        "10000-30000": 325,
+        "30000-50000": 320,
+        "50000-100000": 310,
+        "100000-999999": 300
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 175,
+      "name": "ARQA CS 120MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 310,
+        "10000-30000": 305,
+        "30000-50000": 300,
+        "50000-100000": 290,
+        "100000-999999": 280
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 176,
+      "name": "DRYMOST STORM 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 310,
+        "10000-30000": 305,
+        "30000-50000": 300,
+        "50000-100000": 290,
+        "100000-999999": 280
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 177,
+      "name": "DRYMOST ARMAGEDDON 200MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 300,
+        "10000-30000": 295,
+        "30000-50000": 290,
+        "50000-100000": 280,
+        "100000-999999": 270
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 178,
+      "name": "ISTERIKA&HOTSPOT 180MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 300,
+        "10000-30000": 295,
+        "30000-50000": 290,
+        "50000-100000": 280,
+        "100000-999999": 270
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 179,
+      "name": "ISTERIKA LETHAL X 205MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 310,
+        "10000-30000": 305,
+        "30000-50000": 300,
+        "50000-100000": 290,
+        "100000-999999": 280
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 180,
+      "name": "ISTERIKA LETHAL 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 290,
+        "10000-30000": 285,
+        "30000-50000": 280,
+        "50000-100000": 270,
+        "100000-999999": 260
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 181,
+      "name": "RED 170MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 250,
+        "10000-30000": 245,
+        "30000-50000": 240,
+        "50000-100000": 230,
+        "100000-999999": 220
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 182,
+      "name": "RED ICE COOL 65MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 250,
+        "10000-30000": 245,
+        "30000-50000": 240,
+        "50000-100000": 230,
+        "100000-999999": 220
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 183,
+      "name": "ЗЛАЯ МОНАШКА 120MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 310,
+        "10000-30000": 305,
+        "30000-50000": 300,
+        "50000-100000": 290,
+        "100000-999999": 280
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 184,
       "name": "САМОУБИЙЦА 249MG",
       "description": "",
       "category": "Снюс",
       "priceRanges": {
-        "3000-10000": 240,
-        "10000-30000": 230,
+        "3000-10000": 270,
+        "10000-30000": 265,
+        "30000-50000": 260,
+        "50000-100000": 250,
+        "100000-999999": 240
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 185,
+      "name": "D.L.T.A. RED BULL 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 250,
+        "10000-30000": 245,
+        "30000-50000": 240,
+        "50000-100000": 230,
+        "100000-999999": 220
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 186,
+      "name": "GUCCI 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 260,
+        "10000-30000": 255,
+        "30000-50000": 250,
+        "50000-100000": 240,
+        "100000-999999": 230
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 187,
+      "name": "STALKER 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 250,
+        "10000-30000": 245,
+        "30000-50000": 240,
+        "50000-100000": 230,
+        "100000-999999": 220
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 188,
+      "name": "STALKER 200MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 250,
+        "10000-30000": 245,
+        "30000-50000": 240,
+        "50000-100000": 230,
+        "100000-999999": 220
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 189,
+      "name": "HOTSPOT&SOKI 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 300,
+        "10000-30000": 295,
+        "30000-50000": 290,
+        "50000-100000": 280,
+        "100000-999999": 270
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 190,
+      "name": "HOTSPOT SLIM 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 290,
+        "10000-30000": 285,
+        "30000-50000": 280,
+        "50000-100000": 270,
+        "100000-999999": 260
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 191,
+      "name": "ПЛАСТИНКИ PODONKI 150 MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 260,
+        "10000-30000": 255,
+        "30000-50000": 250,
+        "50000-100000": 240,
+        "100000-999999": 230
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 192,
+      "name": "ПЛАСТИНКИ MAD 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 260,
+        "10000-30000": 255,
+        "30000-50000": 250,
+        "50000-100000": 240,
+        "100000-999999": 230
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 193,
+      "name": "ПЛАСТИНКИ ЗЛАЯ МОНАШКА 150MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 260,
+        "10000-30000": 255,
+        "30000-50000": 250,
+        "50000-100000": 240,
+        "100000-999999": 230
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 194,
+      "name": "ПЛАСТИНКИ HYPE & ЧЕ НАДО 70MG?!",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 220,
+        "10000-30000": 215,
+        "30000-50000": 210,
+        "50000-100000": 200,
+        "100000-999999": 190
+      },
+      "flavors": [
+        "Только Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": null,
+      "photo": 1,
+      "popular": false
+    },
+    {
+      "id": 195,
+      "name": "ПЛАСТИНКИ HYPE ACID 100MG",
+      "description": "",
+      "category": "Снюс",
+      "priceRanges": {
+        "3000-10000": 230,
+        "10000-30000": 225,
         "30000-50000": 220,
         "50000-100000": 210,
         "100000-999999": 200
@@ -7001,258 +6404,16 @@
       "popular": false
     },
     {
-      "id": 208,
-      "name": "D.L.T.A. RED BULL 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 210,
-        "10000-30000": 200,
-        "30000-50000": 195,
-        "50000-100000": 190,
-        "100000-999999": 180
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 209,
-      "name": "GUCCI 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 220,
-        "10000-30000": 210,
-        "30000-50000": 200,
-        "50000-100000": 195,
-        "100000-999999": 190
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 210,
-      "name": "STALKER 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 210,
-        "10000-30000": 200,
-        "30000-50000": 195,
-        "50000-100000": 190,
-        "100000-999999": 180
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 211,
-      "name": "STALKER 200MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 210,
-        "10000-30000": 200,
-        "30000-50000": 195,
-        "50000-100000": 190,
-        "100000-999999": 180
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 212,
-      "name": "HOTSPOT&SOKI 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 255,
-        "10000-30000": 250,
-        "30000-50000": 245,
-        "50000-100000": 240,
-        "100000-999999": 235
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 213,
-      "name": "HOTSPOT SLIM 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 245,
-        "10000-30000": 240,
-        "30000-50000": 235,
-        "50000-100000": 230,
-        "100000-999999": 225
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 214,
-      "name": "ПЛАСТИНКИ PODONKI 150 MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 215,
-        "10000-30000": 210,
-        "30000-50000": 205,
-        "50000-100000": 200,
-        "100000-999999": 190
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 215,
-      "name": "ПЛАСТИНКИ MAD 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 215,
-        "10000-30000": 210,
-        "30000-50000": 205,
-        "50000-100000": 200,
-        "100000-999999": 190
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 216,
-      "name": "ПЛАСТИНКИ ЗЛАЯ МОНАШКА 150MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 215,
-        "10000-30000": 210,
-        "30000-50000": 205,
-        "50000-100000": 200,
-        "100000-999999": 190
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 217,
-      "name": "ПЛАСТИНКИ HYPE & ЧЕ НАДО 70MG?!",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 175,
-        "10000-30000": 170,
-        "30000-50000": 165,
-        "50000-100000": 160,
-        "100000-999999": 150
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 218,
-      "name": "ПЛАСТИНКИ HYPE ACID 100MG",
-      "description": "",
-      "category": "Снюс",
-      "priceRanges": {
-        "3000-10000": 190,
-        "10000-30000": 185,
-        "30000-50000": 180,
-        "50000-100000": 175,
-        "100000-999999": 165
-      },
-      "flavors": [
-        "Только Микс"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": 1,
-      "popular": false
-    },
-    {
-      "id": 219,
+      "id": 196,
       "name": "ПЛАСТИНКИ HYPE 70MG",
       "description": "",
       "category": "Снюс",
       "priceRanges": {
-        "3000-10000": 180,
-        "10000-30000": 175,
-        "30000-50000": 170,
-        "50000-100000": 165,
-        "100000-999999": 155
+        "3000-10000": 220,
+        "10000-30000": 215,
+        "30000-50000": 210,
+        "50000-100000": 200,
+        "100000-999999": 190
       },
       "flavors": [
         "Только Микс"
@@ -7265,7 +6426,7 @@
       "popular": false
     },
     {
-      "id": 220,
+      "id": 197,
       "name": "DUAL 50000",
       "description": "",
       "category": "Электронки",
@@ -7287,7 +6448,7 @@
       "popular": false
     },
     {
-      "id": 221,
+      "id": 198,
       "name": "MANTO AIO 1 ШТ В УПАКОВКЕ",
       "description": "",
       "category": "Картридж",
@@ -7307,10 +6468,10 @@
       "popular": false
     },
     {
-      "id": 225,
+      "id": 199,
       "name": "VOOPOO VMATE E2",
       "description": "",
-      "category": "Под системы",
+      "category": "Под-системы",
       "priceRanges": {
         "3000-10000": 950,
         "10000-30000": 930,
@@ -7336,10 +6497,10 @@
       "popular": false
     },
     {
-      "id": 222,
+      "id": 200,
       "name": "GEEK VAPE B100",
       "description": "",
-      "category": "Под системы",
+      "category": "Под-системы",
       "priceRanges": {
         "3000-10000": 2100,
         "10000-30000": 2080,
@@ -7365,10 +6526,10 @@
       "popular": false
     },
     {
-      "id": 223,
+      "id": 201,
       "name": "GEEK VAPE Q PRO",
       "description": "",
-      "category": "Под системы",
+      "category": "Под-системы",
       "priceRanges": {
         "3000-10000": 950,
         "10000-30000": 930,
@@ -7394,7 +6555,7 @@
       "popular": false
     },
     {
-      "id": 224,
+      "id": 202,
       "name": "CATSWILL PREMIUM 30ML 50MG",
       "description": "",
       "category": "Жидкости",
@@ -7416,7 +6577,7 @@
       "popular": false
     },
     {
-      "id": 226,
+      "id": 203,
       "name": "VOZOL VISTA 46000",
       "description": "",
       "category": "Электронки",
@@ -7438,16 +6599,16 @@
       "popular": false
     },
     {
-      "id": 227,
+      "id": 204,
       "name": "LOST MARY MO 10000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 950,
-        "10000-30000": 930,
-        "30000-50000": 900,
-        "50000-100000": 880,
-        "100000-999999": 860
+        "3000-10000": 730,
+        "10000-30000": 720,
+        "30000-50000": 710,
+        "50000-100000": 700,
+        "100000-999999": 690
       },
       "flavors": [
         "Уточнить у менеджера"
@@ -7460,15 +6621,15 @@
       "popular": false
     },
     {
-      "id": 228,
+      "id": 205,
       "name": "RICK AND MORTY ZOMBIE 23000",
       "description": "",
       "category": "Электронки",
       "priceRanges": {
-        "3000-10000": 950,
-        "10000-30000": 930,
-        "30000-50000": 900,
-        "50000-100000": 880,
+        "3000-10000": 900,
+        "10000-30000": 890,
+        "30000-50000": 880,
+        "50000-100000": 870,
         "100000-999999": 860
       },
       "flavors": [
@@ -7482,29 +6643,7 @@
       "popular": false
     },
     {
-      "id": 229,
-      "name": "DUAL NICKBAR 50000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 800,
-        "10000-30000": 790,
-        "30000-50000": 780,
-        "50000-100000": 770,
-        "100000-999999": 760
-      },
-      "flavors": [
-        "Уточнить у менеджера"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/qvL9mVKb/5426927891783554318-(1).jpg",
-      "popular": false
-    },
-    {
-      "id": 230,
+      "id": 206,
       "name": "GEEK VAPE B100",
       "description": "",
       "category": "Под системы",
@@ -7534,7 +6673,7 @@
       "popular": false
     },
     {
-      "id": 231,
+      "id": 207,
       "name": "РИК И МОРТИ EXTRA 20000",
       "description": "",
       "category": "Электронки",
@@ -7576,7 +6715,7 @@
       "popular": false
     },
     {
-      "id": 232,
+      "id": 208,
       "name": "ГРЕХ & САМОУБИЙЦА 30ML 70MG",
       "description": "",
       "category": "Жидкости",
@@ -7596,7 +6735,7 @@
       "popular": false
     },
     {
-      "id": 233,
+      "id": 209,
       "name": "ГРЕХ & САМОУБИЙЦА 30ML 70MG",
       "description": "",
       "category": "Жидкости",
@@ -7628,7 +6767,7 @@
       "popular": false
     },
     {
-      "id": 234,
+      "id": 210,
       "name": "ЗЛАЯ МОНАШКА 30ML 70MG",
       "description": "",
       "category": "Жидкости",
@@ -7650,7 +6789,7 @@
       "popular": false
     },
     {
-      "id": 235,
+      "id": 211,
       "name": "FOGGY 30ML 80MG",
       "description": "",
       "category": "Жидкости",
@@ -7672,49 +6811,7 @@
       "popular": false
     },
     {
-      "id": 236,
-      "name": "DOTA ALL STARS 30ml HARD",
-      "description": "",
-      "category": "Жидкости",
-      "priceRanges": {
-        "3000-10000": 310,
-        "10000-30000": 300,
-        "30000-50000": 295,
-        "50000-100000": 290,
-        "100000-999999": 280
-      },
-      "flavors": [
-        "Сладкая-кислая синяя малина лёд",
-        "Клубника - земляника лёд",
-        "Черника- грейпфрут",
-        "Спрайт - черника- малина",
-        "Ледяной ежевика монстр",
-        "Яблоко виноград",
-        "Кислая клубника - драгонфрукт",
-        "Черешня - арбуз",
-        "Арбуз - манго",
-        "Клубника - маракуйя",
-        "Ментос - виноград",
-        "Персик - манго - лит Энерджи",
-        "Хубба бубба со вкусом колы",
-        "Яблоко персик",
-        "Смородиновый скитлс",
-        "Вишня - персик - мята",
-        "Кислый вишневый ред булл",
-        "Морозная манта - виноград",
-        "Клубника - виноград - мята",
-        "Арбуз - дыня бабл гам",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
-      "photo": "https://i.postimg.cc/wMPW30QF/5204141250875955343.jpg",
-      "popular": false
-    },
-    {
-      "id": 237,
+      "id": 212,
       "name": "VOZOL STAR 40000",
       "description": "",
       "category": "Электронки",
@@ -7756,7 +6853,7 @@
       "popular": false
     },
     {
-      "id": 238,
+      "id": 213,
       "name": "PUFF MI FLORA 30ML",
       "description": "",
       "category": "Жидкости",
@@ -7800,7 +6897,7 @@
       "popular": false
     },
     {
-      "id": 239,
+      "id": 214,
       "name": "ELF BAR DUKE 20000",
       "description": "",
       "category": "Электронки",
@@ -7833,11 +6930,11 @@
       "resistances": null,
       "sale": false,
       "salePrice": null,
-      "photo": "https://i.postimg.cc/X7v90QVb/5219774665545424794.jpg",
+      "photo": "https://i.postimg.cc/wBF3288j/5255761479259069624-(1).jpg",
       "popular": false
     },
     {
-      "id": 240,
+      "id": 215,
       "name": "ANNIMA LOVE ZOMBIE HARD 30ml",
       "description": "",
       "category": "Жидкости",
@@ -7879,7 +6976,7 @@
       "popular": false
     },
     {
-      "id": 241,
+      "id": 216,
       "name": "RICK AND MORTY&CATSWILL 30ml",
       "description": "",
       "category": "Жидкости",
@@ -7916,7 +7013,7 @@
       "popular": false
     },
     {
-      "id": 242,
+      "id": 217,
       "name": "SKALA ICE 30ml Hard",
       "description": "",
       "category": "Жидкости",
@@ -7953,7 +7050,7 @@
       "popular": false
     },
     {
-      "id": 243,
+      "id": 218,
       "name": "SKALA SOUR 30ml Hard",
       "description": "",
       "category": "Жидкости",
@@ -7990,7 +7087,7 @@
       "popular": false
     },
     {
-      "id": 244,
+      "id": 219,
       "name": "MAD 30ml HARD",
       "description": "",
       "category": "Жидкости",
@@ -8027,7 +7124,7 @@
       "popular": false
     },
     {
-      "id": 245,
+      "id": 220,
       "name": "ANNIMA LOVE САМОУБИЙЦА V2 30ml",
       "description": "",
       "category": "Жидкости",
@@ -8069,7 +7166,7 @@
       "popular": false
     },
     {
-      "id": 246,
+      "id": 221,
       "name": "CATSTRIP 30ml Hard",
       "description": "",
       "category": "Жидкости",
@@ -8106,7 +7203,7 @@
       "popular": false
     },
     {
-      "id": 247,
+      "id": 222,
       "name": "ПСИХ 30ml Hard",
       "description": "",
       "category": "Жидкости",
@@ -8138,7 +7235,7 @@
       "popular": false
     },
     {
-      "id": 248,
+      "id": 223,
       "name": "MONSTERVAPOR ICE 30ml 70mg",
       "description": "",
       "category": "Жидкости",
@@ -8175,7 +7272,7 @@
       "popular": false
     },
     {
-      "id": 249,
+      "id": 224,
       "name": "MONSTERVAPOR SOUR 30ml 70mg",
       "description": "",
       "category": "Жидкости",
@@ -8212,72 +7309,7 @@
       "popular": false
     },
     {
-      "id": 250,
-      "name": "NICEBAR 9000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 200,
-        "10000-30000": 200,
-        "30000-50000": 200,
-        "50000-100000": 200,
-        "100000-999999": 200
-      },
-      "flavors": [
-        "1.sunset burst",
-        "2.sour apple surge",
-        "3.strawberry blast",
-        "4.pink surge",
-        "5.bluebana delight",
-        "6.rainbow rush",
-        "7.citrus chillwave",
-        "8.tropikiwi fury",
-        "9.fruit frenzy",
-        "10.strawkiwi blast",
-        "MIX"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 200,
-      "photo": "https://i.postimg.cc/4xSgBQTH/photo-2026-06-10-14-36-35.jpg",
-      "popular": false
-    },
-    {
-      "id": 251,
-      "name": "TYSON 7000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 220,
-        "10000-30000": 220,
-        "30000-50000": 220,
-        "50000-100000": 220,
-        "100000-999999": 220
-      },
-      "flavors": [
-        "Baked lemon",
-        "Pear party",
-        "Coconut",
-        "Strawberry shortcake",
-        "Menthol",
-        "Desert punch",
-        "Toasted Coconut",
-        "Banana nut",
-        "Tobacco",
-        "Clear",
-        "Frozen banana",
-        "MIX"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 220,
-      "photo": "https://i.postimg.cc/sfcbT4YG/photo-2026-06-10-14-39-41.jpg",
-      "popular": false
-    },
-    {
-      "id": 252,
+      "id": 225,
       "name": "UWELL 8000",
       "description": "",
       "category": "Электронки",
@@ -8309,7 +7341,7 @@
       "popular": false
     },
     {
-      "id": 253,
+      "id": 226,
       "name": "IGNITE 10000 hard",
       "description": "",
       "category": "Электронки",
@@ -8348,7 +7380,7 @@
       "popular": false
     },
     {
-      "id": 254,
+      "id": 227,
       "name": "IGNITE 12000 hard",
       "description": "",
       "category": "Электронки",
@@ -8383,7 +7415,7 @@
       "popular": false
     },
     {
-      "id": 255,
+      "id": 228,
       "name": "LOST MARY MO 20000 PRO",
       "description": "",
       "category": "Электронки",
@@ -8417,39 +7449,7 @@
       "popular": false
     },
     {
-      "id": 256,
-      "name": "IVG 12000 SWITCH",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 240,
-        "10000-30000": 240,
-        "30000-50000": 240,
-        "50000-100000": 240,
-        "100000-999999": 240
-      },
-      "flavors": [
-        "1.⁠ ⁠Grape Blackcurrant-Yummy Gummy",
-        "2.⁠ ⁠⁠Fizzy Cherry-Strawberry Ice",
-        "3.⁠ ⁠⁠Blue Razz Cherry-Plum Blue Razz",
-        "4.⁠ ⁠⁠Plum Pomegranate-Grape Kwi",
-        "5.⁠ ⁠⁠Grape ice - Double Apple",
-        "6.⁠ ⁠⁠Pineapple ice-Mango ice",
-        "7.⁠ ⁠⁠Polar Mint-ice Pop",
-        "8.⁠ ⁠⁠Sweet Pink Lemonade-Cherry peach Lemonade",
-        "9.⁠ ⁠⁠Grape ice - Blue Raspberry ice",
-        "10.⁠ ⁠⁠Vanilla- Peach Ice",
-        "MIX"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 240,
-      "photo": "https://i.postimg.cc/XNsycXvm/photo-2026-06-10-14-54-17.jpg",
-      "popular": false
-    },
-    {
-      "id": 257,
+      "id": 229,
       "name": "OXBAR 30000",
       "description": "",
       "category": "Электронки",
@@ -8491,7 +7491,7 @@
       "popular": false
     },
     {
-      "id": 258,
+      "id": 230,
       "name": "ЖНЕЦ 30ML|70MG",
       "description": "",
       "category": "Жидкости",
@@ -8528,44 +7528,7 @@
       "popular": false
     },
     {
-      "id": 259,
-      "name": "G-TaSTe ARCTIC FOX 20000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 380,
-        "10000-30000": 380,
-        "30000-50000": 380,
-        "50000-100000": 380,
-        "100000-999999": 380
-      },
-      "flavors": [
-        "1-Черника с кислой малиной",
-        "2-Виноград & Лёд",
-        "3-Арбузная жвачка",
-        "4-Клубника & Арбуз",
-        "5-Нежная клубника",
-        "6-Кислый гранат",
-        "7-Яблоко & Дыня",
-        "8-Вишня",
-        "9-Черника & Мята",
-        "10-Сочный грейпфрут",
-        "11-Свежая мята",
-        "12-Вишнёвая Кола",
-        "13-Персик & Лёд",
-        "14-Двойное яблоко",
-        "15-Клубника & Кокос",
-        "MIX"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 380,
-      "photo": "https://i.postimg.cc/152CNDkf/5296710818445597490.jpg",
-      "popular": false
-    },
-    {
-      "id": 260,
+      "id": 231,
       "name": "PUFF MI 16000",
       "description": "",
       "category": "Электронки",
@@ -8607,7 +7570,7 @@
       "popular": false
     },
     {
-      "id": 261,
+      "id": 232,
       "name": "PUFF MI 12000",
       "description": "",
       "category": "Электронки",
@@ -8649,7 +7612,7 @@
       "popular": false
     },
     {
-      "id": 262,
+      "id": 233,
       "name": "PUFF MI 10000",
       "description": "",
       "category": "Электронки",
@@ -8691,7 +7654,7 @@
       "popular": false
     },
     {
-      "id": 263,
+      "id": 234,
       "name": "EXTRE BAR 30000",
       "description": "",
       "category": "Электронки",
@@ -8726,7 +7689,7 @@
       "popular": false
     },
     {
-      "id": 264,
+      "id": 235,
       "name": "СОЛЕВАЯ ДАВАЛКА 7% 30ml",
       "description": "",
       "category": "Жидкости",
@@ -8758,7 +7721,7 @@
       "popular": false
     },
     {
-      "id": 265,
+      "id": 236,
       "name": "DOJO SPHERE X 40000",
       "description": "",
       "category": "Электронки",
@@ -8800,7 +7763,7 @@
       "popular": false
     },
     {
-      "id": 266,
+      "id": 237,
       "name": "LOST MARY SOUR 20mg 30ml",
       "description": "",
       "category": "Жидкости",
@@ -8830,7 +7793,7 @@
       "popular": false
     },
     {
-      "id": 267,
+      "id": 238,
       "name": "LOST MARY SOUR 50mg 30ml",
       "description": "",
       "category": "Жидкости",
@@ -8860,7 +7823,7 @@
       "popular": false
     },
     {
-      "id": 268,
+      "id": 239,
       "name": "LOST MARY ICE 50mg 30ml",
       "description": "",
       "category": "Жидкости",
@@ -8890,7 +7853,7 @@
       "popular": false
     },
     {
-      "id": 269,
+      "id": 240,
       "name": "LOST MARY ICE 20mg 30ml",
       "description": "",
       "category": "Жидкости",
@@ -8920,7 +7883,7 @@
       "popular": false
     },
     {
-      "id": 270,
+      "id": 241,
       "name": "LOST MARY REGULAR 20mg 30ml",
       "description": "",
       "category": "Жидкости",
@@ -8958,7 +7921,7 @@
       "popular": false
     },
     {
-      "id": 271,
+      "id": 242,
       "name": "LOST MARY REGULAR 20mg 30ml",
       "description": "",
       "category": "Жидкости",
@@ -8996,7 +7959,7 @@
       "popular": false
     },
     {
-      "id": 272,
+      "id": 243,
       "name": "KPEKPE  PS 15000",
       "description": "",
       "category": "Электронки",
@@ -9032,7 +7995,7 @@
       "popular": false
     },
     {
-      "id": 273,
+      "id": 244,
       "name": "PAVA 15000",
       "description": "",
       "category": "Электронки",
@@ -9062,73 +8025,7 @@
       "popular": false
     },
     {
-      "id": 274,
-      "name": "KFBAR 20000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 350,
-        "10000-30000": 350,
-        "30000-50000": 350,
-        "50000-100000": 350,
-        "100000-999999": 350
-      },
-      "flavors": [
-        "MIX(уточнять)"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 350,
-      "photo": "https://i.postimg.cc/QdhWbQ1k/5327988754569959993.jpg",
-      "popular": false
-    },
-    {
-      "id": 275,
-      "name": "FIZZY 10000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 330,
-        "10000-30000": 330,
-        "30000-50000": 330,
-        "50000-100000": 330,
-        "100000-999999": 330
-      },
-      "flavors": [
-        "MIX(уточнять)"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 330,
-      "photo": "https://i.postimg.cc/255LpCHF/5327988754569959994.jpg",
-      "popular": false
-    },
-    {
-      "id": 276,
-      "name": "OXBAR 2200 без дыма",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 230,
-        "10000-30000": 230,
-        "30000-50000": 230,
-        "50000-100000": 230,
-        "100000-999999": 230
-      },
-      "flavors": [
-        "MIX(уточнять)"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 230,
-      "photo": "https://i.postimg.cc/FzxhsLRn/5327988754569960000.jpg",
-      "popular": false
-    },
-    {
-      "id": 277,
+      "id": 245,
       "name": "HOTSPOT & ЗЛАЯ МОНАШКА 30ML",
       "description": "",
       "category": "Жидкости",
@@ -9180,10 +8077,10 @@
       "popular": false
     },
     {
-      "id": 278,
+      "id": 246,
       "name": "XROS 6 POD",
       "description": "",
-      "category": "Под системы",
+      "category": "Под-системы",
       "priceRanges": {
         "3000-10000": 1900,
         "10000-30000": 1870,
@@ -9213,10 +8110,10 @@
       "popular": false
     },
     {
-      "id": 279,
+      "id": 247,
       "name": "XROS 6 MINI POD",
       "description": "",
-      "category": "Под системы",
+      "category": "Под-системы",
       "priceRanges": {
         "3000-10000": 1650,
         "10000-30000": 1620,
@@ -9246,7 +8143,7 @@
       "popular": false
     },
     {
-      "id": 280,
+      "id": 248,
       "name": "HOTSPOT x PODONKI 30ML/60MG",
       "description": "",
       "category": "Жидкости",
@@ -9288,7 +8185,7 @@
       "popular": false
     },
     {
-      "id": 281,
+      "id": 249,
       "name": "ISTERIKA CLASSIC 30ML/60MG",
       "description": "",
       "category": "Жидкости",
@@ -9324,7 +8221,7 @@
       "popular": false
     },
     {
-      "id": 282,
+      "id": 250,
       "name": "XEO 45000",
       "description": "",
       "category": "Электронки",
@@ -9356,44 +8253,7 @@
       "popular": false
     },
     {
-      "id": 283,
-      "name": "LOST MARY AIR 22000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 790,
-        "10000-30000": 785,
-        "30000-50000": 780,
-        "50000-100000": 770,
-        "100000-999999": 760
-      },
-      "flavors": [
-        "Кислое Яблоко Лёд",
-        "Кислая Ежевика Лёд",
-        "Киви Маракуйя Гуава",
-        "Бергамот Базилик",
-        "Черника Малина Лед",
-        "Горная Мята",
-        "Ледяной Арбуз",
-        "Персиковый Чай",
-        "Карамбола Ягоды",
-        "Чёрная Смородина Грейпфрут",
-        "Кислый Виноград Лед",
-        "Ледяная Груша",
-        "Ледяная Вода",
-        "Лимон Лайм",
-        "Газировка Вишня Клюква",
-        "MIX"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": 230,
-      "photo": "https://i.postimg.cc/wxP5NDrb/24d93b9a-30f2-43de-85c9-b37f16381692.jpg",
-      "popular": false
-    },
-    {
-      "id": 284,
+      "id": 251,
       "name": "РИК И МОРТИ 18000",
       "description": "",
       "category": "Электронки",
@@ -9435,7 +8295,7 @@
       "popular": false
     },
     {
-      "id": 285,
+      "id": 252,
       "name": "TOMORO 40000",
       "description": "",
       "category": "Электронки",
@@ -9467,39 +8327,7 @@
       "popular": false
     },
     {
-      "id": 286,
-      "name": "ESMOO 35000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 440,
-        "10000-30000": 440,
-        "30000-50000": 440,
-        "50000-100000": 440,
-        "100000-999999": 440
-      },
-      "flavors": [
-        "Арбуз лёд",
-        "Апельсин клубника мята",
-        "Ананас лёд",
-        "Ваниль мороженое",
-        "Микс ягода",
-        "Виноград лёд",
-        "Лимон мята",
-        "Маракуйя",
-        "Персик лёд",
-        "Черника малина",
-        "MIX"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 440,
-      "photo": "https://i.postimg.cc/X7Y7bXp6/5390875962070736383.jpg",
-      "popular": false
-    },
-    {
-      "id": 287,
+      "id": 253,
       "name": "ELUX 30000",
       "description": "",
       "category": "Электронки",
@@ -9541,7 +8369,7 @@
       "popular": false
     },
     {
-      "id": 288,
+      "id": 254,
       "name": "FUMO INSPO 18000",
       "description": "",
       "category": "Электронки",
@@ -9563,7 +8391,7 @@
       "popular": false
     },
     {
-      "id": 289,
+      "id": 255,
       "name": "SONG 8000",
       "description": "",
       "category": "Электронки",
@@ -9585,7 +8413,7 @@
       "popular": false
     },
     {
-      "id": 290,
+      "id": 256,
       "name": "ISTERIKA & САМОУБИЙЦА В2 DANGER",
       "description": "",
       "category": "Жидкости",
@@ -9627,7 +8455,7 @@
       "popular": false
     },
     {
-      "id": 291,
+      "id": 257,
       "name": "НИКОТЯН 30ML 80MG",
       "description": "",
       "category": "Жидкости",
@@ -9669,7 +8497,7 @@
       "popular": false
     },
     {
-      "id": 292,
+      "id": 258,
       "name": "ONLY FANS 30ML 69MG",
       "description": "",
       "category": "Электронки",
@@ -9706,7 +8534,7 @@
       "popular": false
     },
     {
-      "id": 293,
+      "id": 259,
       "name": "СУИЦИДНИК 30ML 80MG SOUR",
       "description": "",
       "category": "Электронки",
@@ -9738,7 +8566,7 @@
       "popular": false
     },
     {
-      "id": 294,
+      "id": 260,
       "name": "СУИЦИДНИК 30ML 80MG ICE",
       "description": "",
       "category": "Жидкости",
@@ -9770,7 +8598,7 @@
       "popular": false
     },
     {
-      "id": 295,
+      "id": 261,
       "name": "СУИЦИДНИК 30ML 80MG SWEET",
       "description": "",
       "category": "Жидкости",
@@ -9802,7 +8630,7 @@
       "popular": false
     },
     {
-      "id": 296,
+      "id": 262,
       "name": "САМОУБИЙЦА V2 DANGER 25000",
       "description": "",
       "category": "Электронки",
@@ -9834,7 +8662,7 @@
       "popular": false
     },
     {
-      "id": 297,
+      "id": 263,
       "name": "RICK MORTY 15000",
       "description": "",
       "category": "Электронки",
@@ -9876,7 +8704,7 @@
       "popular": false
     },
     {
-      "id": 298,
+      "id": 264,
       "name": "PUFFMI BLUSH 23000",
       "description": "",
       "category": "Электронки",
@@ -9918,7 +8746,7 @@
       "popular": false
     },
     {
-      "id": 299,
+      "id": 265,
       "name": "IMOMENT 50000",
       "description": "",
       "category": "Электронки",
@@ -9956,7 +8784,7 @@
       "popular": false
     },
     {
-      "id": 300,
+      "id": 266,
       "name": "FUNKY LANDS LANDER 20000",
       "description": "",
       "category": "Электронки",
@@ -9993,7 +8821,7 @@
       "popular": false
     },
     {
-      "id": 301,
+      "id": 267,
       "name": "ЗЛАЯ МОНАШКА 70MG",
       "description": "",
       "category": "Электронки",
@@ -10055,7 +8883,7 @@
       "popular": false
     },
     {
-      "id": 302,
+      "id": 268,
       "name": "PHOBIA АНАРХИЯxAnnima Love 30ML/70MG",
       "description": "",
       "category": "Жидкости",
@@ -10097,7 +8925,7 @@
       "popular": false
     },
     {
-      "id": 303,
+      "id": 269,
       "name": "NARCOZ ULTRA SOUR 30ML/60MG",
       "description": "",
       "category": "Жидкости",
@@ -10139,7 +8967,7 @@
       "popular": false
     },
     {
-      "id": 304,
+      "id": 270,
       "name": "NARCOZ SWEET 30ML/60MG",
       "description": "",
       "category": "Жидкости",
@@ -10181,7 +9009,7 @@
       "popular": false
     },
     {
-      "id": 305,
+      "id": 271,
       "name": "NARCOZ EXTRA 30/60MG",
       "description": "",
       "category": "Жидкости",
@@ -10223,7 +9051,7 @@
       "popular": false
     },
     {
-      "id": 306,
+      "id": 272,
       "name": "RICK AND MORTY BAD ACID 30ML/60MG",
       "description": "",
       "category": "Жидкости",
@@ -10275,7 +9103,7 @@
       "popular": false
     },
     {
-      "id": 307,
+      "id": 273,
       "name": "ГРЕХ EXTRA 30ML/80MG",
       "description": "",
       "category": "Жидкости",
@@ -10313,11 +9141,11 @@
       "resistances": null,
       "sale": false,
       "salePrice": 210,
-      "photo": "https://i.postimg.cc/DzNsQqdD/photo-5267393457582450353-y.jpg",
+      "photo": "https://i.postimg.cc/mZ7kpHGd/5289882481869922680.jpg",
       "popular": false
     },
     {
-      "id": 308,
+      "id": 274,
       "name": "Rick AND Morty Russia 30ML/70MG",
       "description": "",
       "category": "Электронки",
@@ -10369,7 +9197,7 @@
       "popular": false
     },
     {
-      "id": 309,
+      "id": 275,
       "name": "RICK AND MORTY BAD TRIP 30ML/60MG",
       "description": "",
       "category": "Жидкости",
@@ -10422,7 +9250,7 @@
       "popular": false
     },
     {
-      "id": 310,
+      "id": 276,
       "name": "ЧЕРНАЯ ВДОВА 30ML\\70MG",
       "description": "",
       "category": "Жидкости",
@@ -10464,7 +9292,7 @@
       "popular": false
     },
     {
-      "id": 311,
+      "id": 277,
       "name": "ANNIMA LOVE KILLER 30ML 80MG",
       "description": "",
       "category": "Жидкости",
@@ -10516,7 +9344,7 @@
       "popular": false
     },
     {
-      "id": 312,
+      "id": 278,
       "name": "EVIL HUSKY 30ML/50MG",
       "description": "",
       "category": "Жидкости",
@@ -10558,7 +9386,7 @@
       "popular": false
     },
     {
-      "id": 313,
+      "id": 279,
       "name": "ICE FOX by Iceberg LIQUID 30ML/60MG",
       "description": "",
       "category": "Жидкости",
@@ -10620,7 +9448,7 @@
       "popular": false
     },
     {
-      "id": 314,
+      "id": 280,
       "name": "ICE FOX EXTRA HARD 30ml/70mg",
       "description": "",
       "category": "Жидкости",
@@ -10667,16 +9495,16 @@
       "popular": false
     },
     {
-      "id": 315,
+      "id": 281,
       "name": "ICEBERG PREMIUM EXTRA HARD 30ml/70mg",
       "description": "",
       "category": "Жидкости",
       "priceRanges": {
-        "3000-10000": 420,
-        "10000-30000": 415,
-        "30000-50000": 410,
-        "50000-100000": 400,
-        "100000-999999": 390
+        "3000-10000": 470,
+        "10000-30000": 465,
+        "30000-50000": 460,
+        "50000-100000": 450,
+        "100000-999999": 440
       },
       "flavors": [
         "Щербет Ежевика Вишня",
@@ -10724,7 +9552,7 @@
       "popular": false
     },
     {
-      "id": 316,
+      "id": 282,
       "name": "OGGO PRIME 30ML\\70MG HARD",
       "description": "",
       "category": "Жидкости",
@@ -10786,7 +9614,7 @@
       "popular": false
     },
     {
-      "id": 317,
+      "id": 283,
       "name": "GANG CHILL 30000",
       "description": "",
       "category": "Электронки",
@@ -10823,7 +9651,7 @@
       "popular": false
     },
     {
-      "id": 318,
+      "id": 284,
       "name": "PUFF MI DURA HALO 20000",
       "description": "",
       "category": "Электронки",
