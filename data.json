@@ -10179,6 +10179,48 @@
       "salePrice": 210,
       "photo": "https://i.postimg.cc/dtRGT0Qz/2aaed83b-0512-47f6-9a35-0f1d2aef7164.jpg",
       "popular": false
+    },
+    {
+      "id": 297,
+      "name": "ELF BAR (EBCREATE) BC PRO 40000",
+      "description": "",
+      "category": "Электронки",
+      "priceRanges": {
+        "3000-10000": 480,
+        "10000-30000": 470,
+        "30000-50000": 460,
+        "50000-100000": 450,
+        "100000-999999": 440
+      },
+      "flavors": [
+        "Aurora Berries",
+        "Black Mint",
+        "Pink Lemonade",
+        "Blackberry Grape",
+        "Blue Razz Ice",
+        "Golden Berry",
+        "Grape Twist",
+        "Pineapple POM",
+        "Raspberry Mallo",
+        "Sour Apple Ice",
+        "Strawberry Kiwi",
+        "Strawberry Blend",
+        "Toasted Pineapple",
+        "Sour Fucking Fab",
+        "Tropical Baja",
+        "Winter Mint",
+        "Triple Berry",
+        "Strawberry Raspberry Frost",
+        "Watermelon Ice",
+        "Watermelon Peach Frost",
+        "Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": 210,
+      "photo": "https://i.postimg.cc/dtRGT0Qz/2aaed83b-0512-47f6-9a35-0f1d2aef7164.jpg",
+      "popular": false
     }
   ]
 }
