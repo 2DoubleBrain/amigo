@@ -6731,38 +6731,6 @@
       "resistances": null,
       "sale": false,
       "salePrice": null,
-      "photo": "https://i.postimg.cc/k5FS8hfv/5449862798100862680.jpg",
-      "popular": false
-    },
-    {
-      "id": 209,
-      "name": "ГРЕХ & САМОУБИЙЦА 30ML 70MG",
-      "description": "",
-      "category": "Жидкости",
-      "priceRanges": {
-        "3000-10000": 260,
-        "10000-30000": 255,
-        "30000-50000": 250,
-        "50000-100000": 240,
-        "100000-999999": 230
-      },
-      "flavors": [
-        "Энергетик",
-        "Фруктовая конфета",
-        "Смородиновые леденцы",
-        "Манговый лимонад",
-        "Синяя малина арбуз",
-        "Персиковый йогурт",
-        "Малина лимон",
-        "Ананас манго маракуйя",
-        "Малина банан",
-        "Димон виноград",
-        "МИКС"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": false,
-      "salePrice": null,
       "photo": "https://i.postimg.cc/L4khV1mB/5465129912189523972.jpg",
       "popular": false
     },
@@ -7306,38 +7274,6 @@
       "sale": true,
       "salePrice": 280,
       "photo": "https://i.postimg.cc/fLJWCxMy/5276049938397731475.jpg",
-      "popular": false
-    },
-    {
-      "id": 225,
-      "name": "UWELL 8000",
-      "description": "",
-      "category": "Электронки",
-      "priceRanges": {
-        "3000-10000": 180,
-        "10000-30000": 180,
-        "30000-50000": 180,
-        "50000-100000": 180,
-        "100000-999999": 180
-      },
-      "flavors": [
-        "Клубника с молоком",
-        "Манго лед",
-        "Персик лед",
-        "Свежая мята",
-        "Черника лед",
-        "Черника лимон лед",
-        "Черника малина лед",
-        "Энергетический напиток",
-        "Яблоко сода",
-        "Виноград лед",
-        "MIX"
-      ],
-      "colors": null,
-      "resistances": null,
-      "sale": true,
-      "salePrice": 180,
-      "photo": "https://i.postimg.cc/vTHqJCrc/photo-2026-06-10-14-42-02.jpg",
       "popular": false
     },
     {
