@@ -10568,6 +10568,38 @@
       "salePrice": 210,
       "photo": "https://i.postimg.cc/DzXrTzPt/5188239160232321074.jpg",
       "popular": false
+    },
+    {
+      "id": 307,
+      "name": "NEXA ULTRA 2 50000",
+      "description": "",
+      "category": "Электронки",
+      "priceRanges": {
+        "3000-10000": 460,
+        "10000-30000": 450,
+        "30000-50000": 440,
+        "50000-100000": 430,
+        "100000-999999": 420
+      },
+      "flavors": [
+        "Strawberry ice",
+        "Strawberry mango",
+        "Black cherry",
+        "Watermelon ice",
+        "Georgia Peach ice",
+        "Fcuking FAB",
+        "Sour Apple ice",
+        "Miami mint",
+        "Strawberry colada",
+        "Blueberry watermelon",
+        "Микс"
+      ],
+      "colors": null,
+      "resistances": null,
+      "sale": false,
+      "salePrice": 210,
+      "photo": "https://i.postimg.cc/4xgNhbYZ/5188239160232321072.jpg",
+      "popular": false
     }
   ]
 }
